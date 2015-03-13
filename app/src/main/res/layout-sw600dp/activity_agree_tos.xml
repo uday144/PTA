@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.ptapp.activity.AgreeTosActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="200dp"
+                android:src="@drawable/schoolo_image"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="90dp"
+                android:contentDescription=""
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text1"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/theme_primary"
+                android:textSize="@dimen/text_size_xlarge"
+                android:paddingTop="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tos_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tosLink"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/theme_accent_1"
+                android:onClick="onClickTosLink"
+                android:clickable="true" />
+
+            <WebView
+                android:id="@+id/wv_tos"
+                android:layout_width="500dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"></WebView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/YellowGreen"
+                android:layout_marginBottom="50dp"></View>
+
+            <LinearLayout
+                android:layout_height="100dp"
+                android:background="@color/theme_primary"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="50dp"
+                android:layout_width="500dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?photoItemForeground"
+                    android:text="@string/agree_continue"
+                    android:textColor="#8fff"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="@integer/font_textStyle_medium"
+                    android:fontFamily="@string/font_fontFamily_medium"
+                    android:textAllCaps="true"
+                    android:onClick="onClickAgreeAndContinue"
+                    android:id="@+id/button_agree" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

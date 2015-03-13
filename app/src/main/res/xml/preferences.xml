@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="catMain"
+        android:summary="Main Settings"
+        android:title="@string/pref_cat_title_Personal">
+        <EditTextPreference
+            android:dialogTitle="@string/pref_txt_dialogTitle_EmailAccount"
+            android:key="pref_txt_EmailAccount"
+            android:summary="@string/pref_txt_summary_EmailAccount"
+            android:title="@string/pref_txt_title_EmailAccount"></EditTextPreference>
+        <EditTextPreference
+            android:dialogTitle="@string/pref_txt_dialogTitle_reminderTime"
+            android:key="pref_txt_reminderTime"
+            android:summary="@string/pref_txt_summary_reminderTime"
+            android:title="@string/pref_txt_title_reminderTime"></EditTextPreference>
+        <EditTextPreference
+            android:dialogTitle="@string/pref_txt_dlgTitle_numOfRows"
+            android:key="pref_txt_numOfRows"
+            android:summary="@string/pref_txt_summary_numberOfRows"
+            android:title="@string/pref_txt_title_numberOfRows"></EditTextPreference>
+        <Preference
+            android:key="chat_id"
+            android:summary=""
+            android:title="Chat Id: "></Preference>
+
+
+        <!-- <ListPreference -->
+        <!-- android:defaultValue="Wi-Fi" -->
+        <!-- android:entries="@array/listArray" -->
+        <!-- android:entryValues="@array/listValues" -->
+        <!-- android:key="listPref" -->
+        <!-- android:summary="Network connectivity required to download the feed." -->
+        <!-- android:title="Download Feed" /> -->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

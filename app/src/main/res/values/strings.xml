@@ -1,0 +1,2217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Schoolo</string>
+
+    <!-- Type od Roles -->
+    <!--
+    <string name="role_teacher">T</string>
+    <string name="role_parent">P</string>
+    <string name="role_both">Both</string> &lt;!&ndash;Both roles - Teacher as well as Parent&ndash;&gt;
+    <string name="role_student">S</string>
+    -->
+
+    <!--Buttons-->
+    <string name="submit">Submit</string>
+    <string name="yes_btn">Yes</string>
+    <string name="no_btn">No</string>
+
+    <!-- Don't ask/show me - Checkbox -->
+    <string name="dont_show_text">Do not show again</string>
+
+    <!-- GCM Demo strings -->
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+
+    <!-- Preferences -->
+    <string name="pref_cat_title_Personal">Events Settings</string>
+    <string name="pref_txt_dialogTitle_EmailAccount">Enter Google Calendar Email Id</string>
+    <string name="pref_txt_summary_EmailAccount">This google email account will be used to save events, into the calendar</string>
+    <string name="pref_txt_title_EmailAccount">Google Calendar Email:</string>
+    <!-- Preferences-class -->
+    <string name="pref_txt_dialogTitle_KidsClasses">Enter kids classes(comma separated)</string>
+    <string name="pref_txt_summary_KidsClasses">Store your all kids classes  here. Add the number of classes in which your kids are, separated by comma.</string>
+    <string name="pref_txt_title_KidsClasses">Enter kids classes:</string>
+    <!-- Preferences- reminder time set -->
+    <string name="pref_txt_dialogTitle_reminderTime">Enter reminder time(numbers only)</string>
+    <string name="pref_txt_summary_reminderTime">Change the reminder time for all events associated with your kids</string>
+    <string name="pref_txt_title_reminderTime">Set time in minutes:</string>
+    <!-- Preferences - number of rows -->
+    <string name="pref_txt_dlgTitle_numOfRows">Enter number of rows(numbers only)</string>
+    <string name="pref_txt_summary_numberOfRows">Change the number of rows to show in the home screen for events</string>
+    <string name="pref_txt_title_numberOfRows">Enter number of rows:</string>
+
+    <!-- Menu items Settings -->
+    <string name="BSdownload">Add Events from JSON object</string>
+    <string name="kid_context">Select Kid</string>
+    <string name="school">Vivek High School</string>
+    <string name="to_kids_page">Switch to kid\'s Page</string>
+    <string name="recent_history">Recent History</string>
+    <string name="app_settings">Application Settings</string>
+    <string name="news_events">News and Events</string>
+    <string name="other_parents">Other Parent\'s</string>
+    <string name="notes_for_kiddo">Notes for my kiddo</string>
+    <string name="school_page">School\'s Page</string>
+    <string name="signout">Sign Out</string>
+
+    <!-- activity_agree_tos -->
+    <string name="text1">- Building Tomorrow\'s Schools</string>
+    <string name="tosLink"><u>Terms of Service</u></string>
+    <string name="agree_continue">Agree and Continue</string>
+
+    <!-- activity_verify_phone -->
+    <string name="verify_phone">Verify your phone number</string>
+    <string name="confirm_phone">Please confirm your phone number registered with your school or institution.</string>
+    <string name="app_will_send">App will send SMS to this number for authentication purpose only.</string>
+    <string name="isd_code">91</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="btn_ok_text">ok</string>
+    <string name="plus_sign">+</string>
+
+    <!-- activity_otp -->
+    <string name="welcome_text">Welcome to Schoolo</string>
+    <string name="receive_sms_line1">You should shortly receive one time SMS to </string>
+    <string name="receive_sms_line2"> to complete the verification process. (Carrier charges may apply)</string>
+    <string name="otp_text">Enter One Time Password(OTP)as soon as you receive it.</string>
+    <string name="hint_otp">Enter password(OTP)</string>
+    <string name="otp_success_text">Congratulations..! You are now part of the digital network of XYZ institute.</string>
+    <string name="otp_not_matched">OTP didn\'t match</string>
+    <string name="continue_btn_text">Continue...</string>
+
+    <!-- activity_registration_success -->
+    <string name="text2">Please click NO, if the details shown are not pertaining to your ward.</string>
+    <string name="text3">Otherwise, continue...</string>
+    <string name="text4">Please click NO, if the details shown are not pertaining to you.</string>
+    <string name="i_agree">I agree to the</string>
+    <string name="no_kids">Sorry! We didn\'t find any kid(s) in the database. Please ensure you have entered correct phone number or contact your kid\'s school administration.</string>
+    <string name="wrong_data_title">Oops</string>
+    <string name="wrong_text1">Looks like incorrect data is there in the system. Same will be informed to the teacher and corrected.</string>
+    <string name="wrong_text2">Request you to correct the below information and raise an issue to the school about incorrectness?</string>
+    <string name="wrong_text3"></string>
+    <string name="checkbox_text">Is picture correct</string>
+
+
+    <!-- activity_create_first_class -->
+    <string name="text5">(Keep the class name and teacher name which you would like to share with your students or their parents.)</string>
+    <string name="text6">My institute is already registered with Schoolo. I should not be going through this...</string>
+    <string name="validate_btn">Validate your number</string>
+    <string name="hint_something">Type something</string>
+    <string name="hint_class">E.g. Fifth</string>
+    <string name="hint_subject">E.g. Maths</string>
+    <string name="hint_class_title">E.g. Fifth-Maths-6am</string>
+    <string name="registered_with_school">The school you selected is registered with Schoolo, you should automatically  get all the data in  your app. Add the correct number.</string>
+
+    <!-- activity_role_check -->
+    <string name="parent_btn">I\'m a Parent / Student</string>
+    <string name="teacher_btn">I\'m a Teacher</string>
+    <string name="rc_text1a">Server will send one time SMS to</string>
+    <string name="rc_text1b">to complete the verification process. (Carrier charges may apply)</string>
+    <string name="rc_text2">On receipt, please enter One Time Password(OTP), sent to mobile number</string>
+    <string name="rc_text3">App will automatically detect OTP if its running on same device as with supplied phone number.</string>
+    <string name="rc_text4">Please try using different phone number you may have registered with your school/institution</string>
+    <string name="rc_text5">If you feel this the number you have with the school, please check with the school to add  your number to the database.</string>
+
+    <!-- activity_registration_success_parent_student -->
+    <string name="ima">I\'m a </string>
+    <string name="parent">Parent</string>
+    <string name="teacher">Teacher</string>
+    <string name="father">Father</string>
+    <string name="mother">Mother</string>
+    <string name="hint_student_name">Your Ward Name</string>
+    <string name="set_student_pic_text">Set your ward\'s profile picture</string>
+    <string name="text7">Please provide your details, as well:</string>
+    <string name="hint_firstname">First name</string>
+    <string name="hint_lastname">Last name</string>
+    <string name="confirm_tos">I confirm that the details provided are correct and agree to the</string>
+
+    <!-- activity_Educator_group_msg -->
+    <string name="send_to">Send To:</string>
+    <string name="hint_type_msg">Type message here</string>
+
+    <!--
+    Menu item that allows the user to start a search for a session by name. After clicking,
+    they type in their search query.
+    -->
+    <string name="description_search">Search</string>
+
+    <!-- Menu item to invite parents or students -->
+    <string name="invite">invite</string>
+
+    <!-- Menu item to show number of subscribers -->
+    <string name="subscribers">Subscribers</string>
+
+    <!-- Label for Search screen, that allows users to search for sessions. -->
+    <string name="title_search">Search</string>
+
+    <!-- Hint that the user can search across sessions -->
+    <string name="search_hint">Search Schoolo</string>
+    <!--
+    Search label that shows the type of data being searched for when the user clicks the
+    Search button.
+    -->
+    <string name="search_label">Google I/O sessions</string>
+
+    <!-- MainActivity -->
+    <string name="no_contacts_found">No contacts, yet.</string>
+    <string name="title_activity_chat">ChatActivity</string>
+
+    <!-- home -->
+    <string name="page_home">Home </string>
+    <string name="desc_cam">Camera Shot </string>
+    <string name="desc_people">People </string>
+    <string name="desc_bell">Bell </string>
+
+    <!-- EventMonthlyListActivity -->
+    <string name="no_events_found">No event pushed for the this month, yet.</string>
+    <string name="dont_show_checked_text">School events will be pushed to your google Calendar without asking again</string>
+    <string name="event_popup_title">Saving Events to Calendar</string>
+    <string name="event_popup_msg">School annual calendar has been stored in your phone. Your child\'s specific events will be pushed to your calendar, on tap of \'OK\' button. By default, reminder has been set to 1 day before the event. You can change the reminder time, either by changing the reminder time of individual event in the calendar, or by changing the default time of the reminder in the app\'s settings.  </string>
+    <string name="monthly_events"> Monthly Events</string>
+
+    <!-- SubjectMsgsActivity -->
+    <string name="no_messages_found">No messages received.</string>
+    <!-- ChildProfileActivity -->
+    <string name="page_child_profile">Child Profile </string>
+    <!-- EducatorMsgsActivity -->
+    <string name="page_educator_msgs">Educator Messages </string>
+    <!-- ViewImageActivity -->
+    <string name="page_view_image">Show Image </string>
+    <!-- EventDetailActivity -->
+    <string name="event_detail">Event Detail</string>
+
+    <!-- UserTypeActivity -->
+    <string name="user_type_text">Before we begin, how would you like to open this app</string>
+
+    <!-- Retrofit -->
+    <!--<string name="first_part_api_link">http://ec2-54-85-38-34.compute-1.amazonaws.com:8080/schoolorestapi/v1/</string>-->
+    <!--TODO:need to shift it to sharedPref-->
+    <string name="first_part_api_link">http://ec2-54-85-38-34.compute-1.amazonaws.com:8090/schoolorestapi/v1/</string>
+    <!-- <string name="first_part_api_link">http://ec2-54-85-38-34.compute-1.amazonaws.com:8080/rest/</string> -->
+
+
+    <!-- Accessibility description saying that the app's navigation drawer has been opened -->
+    <string name="drawer_open">Open navigation drawer</string>
+
+    <!-- Accessibility description saying that the app's navigation drawer has been closed -->
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_chat_contact_list">ChatContactList</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_user_type">Schoolo</string>
+    <string name="title_activity_parent_list">ParentListActivity</string>
+    <string name="action_new_message">New Message</string>
+    <string name="action_take_attendance">Take Attendance</string>
+
+    <!-- Navigation Drawer -->
+    <!-- Menu item to open the Experts screen [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_experts_directory">Experts</string>
+
+    <!-- Menu item to open the Explore screen [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_explore">Explore</string>
+
+    <!-- Menu item to open the Map screen [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_map">Map</string>
+
+    <!-- Menu item to open the My Schedule screen [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_my_schedule">My Schedule</string>
+
+    <!-- Menu item to open the People I've Met screen [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_people_ive_met">People I\'ve Met</string>
+
+    <!-- Menu item to open the Settings screen [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_settings">Settings</string>
+
+    <!-- Menu item to start the Sign In flow [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_sign_in">Sign in</string>
+
+    <!--
+    Menu item to open a screen that lists I/O related hashtags. Each hashtag, when clicked, will
+    open Google+ stream of posts that uses the hashtag [CHAR_LIMIT=20]
+    -->
+    <string name="navdrawer_item_social">Social</string>
+
+    <!-- Menu item to open a list of current and past I/O videos [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_video_library">Video library</string>
+    <string name="title_activity_chat_educator">ChatEducatorActivity</string>
+    <string name="title_activity_educator_chat">EducatorChatActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_home_educator">HomeEducatorActivity</string>
+
+    <!--
+    Shown in a drop-down list on the main screen, indicating that all conference themes
+    are being displayed. Themes are major categories for sessions (the themes are Design,
+    Develop and Distribute).
+    -->
+    <string name="all_themes">All Themes</string>
+
+    <!--
+    Shown in a drop-down list on the main screen, indicating that all conference topics
+    are being displayed. Topics are major categories for sessions (example topics are: Android,
+    Chrome, Google APIs, Wearables, etc).
+    -->
+    <string name="all_topics">All Topics</string>
+
+    <!--
+    Shown in a drop-down list on the main screen, indicating that all session types
+    are being displayed. Some examples of session types are: session, office hours, code lab.
+    -->
+    <string name="all_types">All Types</string>
+
+    <!-- Short text label indicating a grouping of themes -->
+    <string name="themes">Themes</string>
+
+    <!-- Label for exploration category which groups session topics -->
+    <string name="topics">Topics</string>
+
+    <!-- Label for exploration category which groups session types -->
+    <string name="types">Types</string>
+
+    <!--
+    Message shown in the session explorer when the user applies a filter that results no
+    session
+    -->
+    <string name="no_matching_sessions">No matching sessions.</string>
+    <!--
+    Message shown in the session explorer when the user selects a time slot that has no
+    session
+    -->
+    <string name="no_matching_sessions_in_interval">No sessions available in this time slot.</string>
+
+    <!-- Message shown in the events list when no events found. -->
+    <string name="no_matching_videos">No matching events.</string>
+
+    <!-- Shown as the title of the user's schedule for today -->
+    <string name="day_title_today">Today</string>
+
+    <!-- Shown as the title of the user's schedule for tomorrow -->
+    <string name="day_title_tomorrow">Tomorrow</string>
+
+    <!-- Shown as the title of the user's schedule for yesterday -->
+    <string name="day_title_yesterday">Yesterday</string>
+
+    <!-- Header for a group of sessions in Session Explorer that don't fit into other tag-based groups -->
+    <string name="others">Others</string>
+
+    <!-- Text indicating the session has ended -->
+    <string name="session_finished">Ended</string>
+
+    <!--
+    Shown as a header on a list of sessions to indicate that the sessions that appear on that
+    group have already ended.
+    -->
+    <string name="ended_sessions">Ended sessions</string>
+
+    <!--
+    Short text appended to the end of the session subtitle when the session is currently being
+    streamed. Also used in a "LIVE" badge overlay that shows up on top of the session card.
+    Constrained because the session subtitle should be small enough to fit into the
+    explore cards. [CHAR_LIMIT=10]
+    -->
+    <string name="live_now">LIVE NOW</string>
+
+    <!--
+    Short text appended to the end of the session subtitle when the session will be live
+    streamed. Constrained to 10 chars because the session subtitle should be small enough to fit
+    into the explore cards. [CHAR_LIMIT=10]
+    -->
+    <string name="live_available">LIVE</string>
+
+    <!-- Text for a session subtitle indicating it does not have a room specified -->
+    <string name="unknown_room">(Unspecified Room)</string>
+
+    <!-- Subtitle of a session indicating time interval and room number -->
+    <string name="session_subtitle"><xliff:g id="time">%1$s</xliff:g> in <xliff:g id="room">%2$s</xliff:g></string>
+    <string name="title_activity_educator_course">EducatorCourseActivity</string>
+
+    <!--
+    Shown in a drop-down list on the main screen, indicating that all conference sessions
+    are being displayed.
+    -->
+    <string name="all_sessions">All Sessions</string>
+    <string name="title_activity_educator_compose_message">New Message</string>
+
+    <!-- XMPP chatting server -->
+    <!--<string name="chat_server">xmpp.jp</string>-->
+    <string name="chat_server">54.88.152.125</string>
+
+    <!-- //testing -->
+    <string-array name="groups_array">
+        <item>Group A</item>
+        <item>Group B</item>
+        <item>Group C</item>
+        <item>Group D</item>
+        <item>Group E</item>
+        <item>Group F</item>
+    </string-array>
+
+    <string name="title_activity_agree_tos">Schoolo</string>
+    <string name="title_activity_verify_phone">Verify Phone</string>
+    <string name="title_activity_registration_success">Welcome</string>
+    <string name="title_activity_create_first_class">Create Class</string>
+    <string name="title_activity_open_tos">Terms of Service</string>
+    <string name="title_activity_role_check">Welcome to Schoolo</string>
+
+    <!-- titles list -->
+    <string-array name="titles">
+        <item>Mr.</item>
+        <item>Ms.</item>
+        <item>Mrs.</item>
+        <item>Miss.</item>
+        <item>Coach</item>
+        <item>Prof.</item>
+    </string-array>
+
+    <!-- countries list -->
+    <array name="countries">
+        <item>@array/country1</item>
+        <item>@array/country2</item>
+        <item>@array/country3</item>
+        <item>@array/country4</item>
+        <item>@array/country5</item>
+        <item>@array/country6</item>
+        <item>@array/country7</item>
+        <item>@array/country8</item>
+        <item>@array/country9</item>
+        <item>@array/country10</item>
+        <item>@array/country11</item>
+        <item>@array/country12</item>
+        <item>@array/country13</item>
+        <item>@array/country14</item>
+        <item>@array/country15</item>
+        <item>@array/country16</item>
+        <item>@array/country17</item>
+        <item>@array/country18</item>
+        <item>@array/country19</item>
+        <item>@array/country20</item>
+        <item>@array/country21</item>
+        <item>@array/country22</item>
+        <item>@array/country23</item>
+        <item>@array/country24</item>
+        <item>@array/country25</item>
+        <item>@array/country26</item>
+        <item>@array/country27</item>
+        <item>@array/country28</item>
+        <item>@array/country29</item>
+        <item>@array/country31</item>
+        <item>@array/country32</item>
+        <item>@array/country33</item>
+        <item>@array/country34</item>
+        <item>@array/country35</item>
+        <item>@array/country36</item>
+        <item>@array/country37</item>
+        <item>@array/country38</item>
+        <item>@array/country39</item>
+        <item>@array/country40</item>
+        <item>@array/country41</item>
+        <item>@array/country42</item>
+        <item>@array/country43</item>
+        <item>@array/country44</item>
+        <item>@array/country45</item>
+        <item>@array/country46</item>
+        <item>@array/country47</item>
+        <item>@array/country48</item>
+        <item>@array/country49</item>
+        <item>@array/country50</item>
+        <item>@array/country51</item>
+        <item>@array/country52</item>
+        <item>@array/country53</item>
+        <item>@array/country54</item>
+        <item>@array/country55</item>
+        <item>@array/country56</item>
+        <item>@array/country57</item>
+        <item>@array/country58</item>
+        <item>@array/country59</item>
+        <item>@array/country60</item>
+        <item>@array/country61</item>
+        <item>@array/country62</item>
+        <item>@array/country63</item>
+        <item>@array/country64</item>
+        <item>@array/country65</item>
+        <item>@array/country66</item>
+        <item>@array/country67</item>
+        <item>@array/country68</item>
+        <item>@array/country69</item>
+        <item>@array/country70</item>
+        <item>@array/country71</item>
+        <item>@array/country72</item>
+        <item>@array/country73</item>
+        <item>@array/country74</item>
+        <item>@array/country75</item>
+        <item>@array/country77</item>
+        <item>@array/country78</item>
+        <item>@array/country79</item>
+        <item>@array/country80</item>
+        <item>@array/country81</item>
+        <item>@array/country82</item>
+        <item>@array/country83</item>
+        <item>@array/country84</item>
+        <item>@array/country85</item>
+        <item>@array/country86</item>
+        <item>@array/country87</item>
+        <item>@array/country88</item>
+        <item>@array/country89</item>
+        <item>@array/country90</item>
+        <item>@array/country91</item>
+        <item>@array/country92</item>
+        <item>@array/country93</item>
+        <item>@array/country94</item>
+        <item>@array/country95</item>
+        <item>@array/country96</item>
+        <item>@array/country97</item>
+        <item>@array/country98</item>
+        <item>@array/country99</item>
+        <item>@array/country100</item>
+        <item>@array/country101</item>
+        <item>@array/country102</item>
+        <item>@array/country103</item>
+        <item>@array/country104</item>
+        <item>@array/country105</item>
+        <item>@array/country107</item>
+        <item>@array/country108</item>
+        <item>@array/country109</item>
+        <item>@array/country110</item>
+        <item>@array/country112</item>
+        <item>@array/country113</item>
+        <item>@array/country114</item>
+        <item>@array/country115</item>
+        <item>@array/country116</item>
+        <item>@array/country117</item>
+        <item>@array/country118</item>
+        <item>@array/country119</item>
+        <item>@array/country120</item>
+        <item>@array/country121</item>
+        <item>@array/country122</item>
+        <item>@array/country123</item>
+        <item>@array/country124</item>
+        <item>@array/country125</item>
+        <item>@array/country126</item>
+        <item>@array/country127</item>
+        <item>@array/country128</item>
+        <item>@array/country129</item>
+        <item>@array/country130</item>
+        <item>@array/country131</item>
+        <item>@array/country132</item>
+        <item>@array/country133</item>
+        <item>@array/country134</item>
+        <item>@array/country135</item>
+        <item>@array/country136</item>
+        <item>@array/country137</item>
+        <item>@array/country138</item>
+        <item>@array/country139</item>
+        <item>@array/country140</item>
+        <item>@array/country141</item>
+        <item>@array/country142</item>
+        <item>@array/country143</item>
+        <item>@array/country144</item>
+        <item>@array/country145</item>
+        <item>@array/country146</item>
+        <item>@array/country147</item>
+        <item>@array/country148</item>
+        <item>@array/country149</item>
+        <item>@array/country150</item>
+        <item>@array/country151</item>
+        <item>@array/country152</item>
+        <item>@array/country153</item>
+        <item>@array/country154</item>
+        <item>@array/country156</item>
+        <item>@array/country157</item>
+        <item>@array/country158</item>
+        <item>@array/country159</item>
+        <item>@array/country160</item>
+        <item>@array/country161</item>
+        <item>@array/country162</item>
+        <item>@array/country163</item>
+        <item>@array/country164</item>
+        <item>@array/country165</item>
+        <item>@array/country166</item>
+        <item>@array/country167</item>
+        <item>@array/country168</item>
+        <item>@array/country169</item>
+        <item>@array/country170</item>
+        <item>@array/country171</item>
+        <item>@array/country172</item>
+        <item>@array/country173</item>
+        <item>@array/country174</item>
+        <item>@array/country175</item>
+        <item>@array/country176</item>
+        <item>@array/country177</item>
+        <item>@array/country178</item>
+        <item>@array/country179</item>
+        <item>@array/country180</item>
+        <item>@array/country181</item>
+        <item>@array/country182</item>
+        <item>@array/country183</item>
+        <item>@array/country184</item>
+        <item>@array/country185</item>
+        <item>@array/country186</item>
+        <item>@array/country187</item>
+        <item>@array/country188</item>
+        <item>@array/country189</item>
+        <item>@array/country190</item>
+        <item>@array/country191</item>
+        <item>@array/country192</item>
+        <item>@array/country193</item>
+        <item>@array/country194</item>
+        <item>@array/country195</item>
+        <item>@array/country196</item>
+        <item>@array/country197</item>
+        <item>@array/country198</item>
+        <item>@array/country199</item>
+        <item>@array/country200</item>
+        <item>@array/country201</item>
+        <item>@array/country203</item>
+        <item>@array/country204</item>
+        <item>@array/country205</item>
+        <item>@array/country206</item>
+        <item>@array/country207</item>
+        <item>@array/country208</item>
+        <item>@array/country209</item>
+        <item>@array/country210</item>
+        <item>@array/country211</item>
+        <item>@array/country212</item>
+        <item>@array/country213</item>
+        <item>@array/country214</item>
+        <item>@array/country215</item>
+        <item>@array/country216</item>
+        <item>@array/country217</item>
+        <item>@array/country218</item>
+        <item>@array/country219</item>
+        <item>@array/country220</item>
+        <item>@array/country221</item>
+        <item>@array/country222</item>
+        <item>@array/country223</item>
+        <item>@array/country224</item>
+        <item>@array/country225</item>
+        <item>@array/country226</item>
+        <item>@array/country227</item>
+        <item>@array/country228</item>
+        <item>@array/country229</item>
+        <item>@array/country230</item>
+        <item>@array/country231</item>
+        <item>@array/country232</item>
+        <item>@array/country235</item>
+        <item>@array/country236</item>
+        <item>@array/country237</item>
+    </array>
+
+    <string-array name="country1">
+        <item name="code">93</item>
+        <item name="iso_code">AF</item>
+        <item name="country">Afghanistan</item>
+    </string-array>
+    <string-array name="country2">
+        <item name="code">355</item>
+        <item name="iso_code">AL</item>
+        <item name="country">Albania</item>
+    </string-array>
+    <string-array name="country3">
+        <item name="code">213</item>
+        <item name="iso_code">DZ</item>
+        <item name="country">Algeria</item>
+    </string-array>
+    <string-array name="country4">
+        <item name="code">1684</item>
+        <item name="iso_code">AS</item>
+        <item name="country">American Samoa</item>
+    </string-array>
+    <string-array name="country5">
+        <item name="code">376</item>
+        <item name="iso_code">AD</item>
+        <item name="country">Andorra</item>
+    </string-array>
+    <string-array name="country6">
+        <item name="code">244</item>
+        <item name="iso_code">AO</item>
+        <item name="country">Angola</item>
+    </string-array>
+    <string-array name="country7">
+        <item name="code">1264</item>
+        <item name="iso_code">AI</item>
+        <item name="country">Anguilla</item>
+    </string-array>
+    <string-array name="country8">
+        <item name="code">672</item>
+        <item name="iso_code">AQ</item>
+        <item name="country">Antarctica</item>
+    </string-array>
+    <string-array name="country9">
+        <item name="code">1268</item>
+        <item name="iso_code">AG</item>
+        <item name="country">Antigua and Barbuda</item>
+    </string-array>
+    <string-array name="country10">
+        <item name="code">54</item>
+        <item name="iso_code">AR</item>
+        <item name="country">Argentina</item>
+    </string-array>
+    <string-array name="country11">
+        <item name="code">374</item>
+        <item name="iso_code">AM</item>
+        <item name="country">Armenia</item>
+    </string-array>
+    <string-array name="country12">
+        <item name="code">297</item>
+        <item name="iso_code">AW</item>
+        <item name="country">Aruba</item>
+    </string-array>
+    <string-array name="country13">
+        <item name="code">61</item>
+        <item name="iso_code">AU</item>
+        <item name="country">Australia</item>
+    </string-array>
+    <string-array name="country14">
+        <item name="code">43</item>
+        <item name="iso_code">AT</item>
+        <item name="country">Austria</item>
+    </string-array>
+    <string-array name="country15">
+        <item name="code">994</item>
+        <item name="iso_code">AZ</item>
+        <item name="country">Azerbaijan</item>
+    </string-array>
+    <string-array name="country16">
+        <item name="code">1242</item>
+        <item name="iso_code">BS</item>
+        <item name="country">Bahamas</item>
+    </string-array>
+    <string-array name="country17">
+        <item name="code">973</item>
+        <item name="iso_code">BH</item>
+        <item name="country">Bahrain</item>
+    </string-array>
+    <string-array name="country18">
+        <item name="code">880</item>
+        <item name="iso_code">BD</item>
+        <item name="country">Bangladesh</item>
+    </string-array>
+    <string-array name="country19">
+        <item name="code">1246</item>
+        <item name="iso_code">BB</item>
+        <item name="country">Barbados</item>
+    </string-array>
+    <string-array name="country20">
+        <item name="code">375</item>
+        <item name="iso_code">BY</item>
+        <item name="country">Belarus</item>
+    </string-array>
+    <string-array name="country21">
+        <item name="code">32</item>
+        <item name="iso_code">BE</item>
+        <item name="country">Belgium</item>
+    </string-array>
+    <string-array name="country22">
+        <item name="code">501</item>
+        <item name="iso_code">BZ</item>
+        <item name="country">Belize</item>
+    </string-array>
+    <string-array name="country23">
+        <item name="code">229</item>
+        <item name="iso_code">BJ</item>
+        <item name="country">Benin</item>
+    </string-array>
+    <string-array name="country24">
+        <item name="code">1441</item>
+        <item name="iso_code">BM</item>
+        <item name="country">Bermuda</item>
+    </string-array>
+    <string-array name="country25">
+        <item name="code">975</item>
+        <item name="iso_code">BT</item>
+        <item name="country">Bhutan</item>
+    </string-array>
+    <string-array name="country26">
+        <item name="code">591</item>
+        <item name="iso_code">BO</item>
+        <item name="country">Bolivia</item>
+    </string-array>
+    <string-array name="country27">
+        <item name="code">387</item>
+        <item name="iso_code">BA</item>
+        <item name="country">Bosnia and Herzegovina</item>
+    </string-array>
+    <string-array name="country28">
+        <item name="code">267</item>
+        <item name="iso_code">BW</item>
+        <item name="country">Botswana</item>
+    </string-array>
+    <string-array name="country29">
+        <item name="code">55</item>
+        <item name="iso_code">BR</item>
+        <item name="country">Brazil</item>
+    </string-array>
+    <string-array name="country31">
+        <item name="code">1284</item>
+        <item name="iso_code">VG</item>
+        <item name="country">British Virgin Islands</item>
+    </string-array>
+    <string-array name="country32">
+        <item name="code">673</item>
+        <item name="iso_code">BN</item>
+        <item name="country">Brunei</item>
+    </string-array>
+    <string-array name="country33">
+        <item name="code">359</item>
+        <item name="iso_code">BG</item>
+        <item name="country">Bulgaria</item>
+    </string-array>
+    <string-array name="country34">
+        <item name="code">226</item>
+        <item name="iso_code">BF</item>
+        <item name="country">Burkina Faso</item>
+    </string-array>
+    <string-array name="country35">
+        <item name="code">95</item>
+        <item name="iso_code">MM</item>
+        <item name="country">Burma (Myanmar)</item>
+    </string-array>
+    <string-array name="country36">
+        <item name="code">257</item>
+        <item name="iso_code">BI</item>
+        <item name="country">Burundi</item>
+    </string-array>
+    <string-array name="country37">
+        <item name="code">855</item>
+        <item name="iso_code">KH</item>
+        <item name="country">Cambodia</item>
+    </string-array>
+    <string-array name="country38">
+        <item name="code">237</item>
+        <item name="iso_code">CM</item>
+        <item name="country">Cameroon</item>
+    </string-array>
+    <string-array name="country39">
+        <item name="code">1</item>
+        <item name="iso_code">CA</item>
+        <item name="country">Canada</item>
+    </string-array>
+    <string-array name="country40">
+        <item name="code">238</item>
+        <item name="iso_code">CV</item>
+        <item name="country">Cape Verde</item>
+    </string-array>
+    <string-array name="country41">
+        <item name="code">1345</item>
+        <item name="iso_code">KY</item>
+        <item name="country">Cayman Islands</item>
+    </string-array>
+    <string-array name="country42">
+        <item name="code">236</item>
+        <item name="iso_code">CF</item>
+        <item name="country">Central African Republic</item>
+    </string-array>
+    <string-array name="country43">
+        <item name="code">235</item>
+        <item name="iso_code">TD</item>
+        <item name="country">Chad</item>
+    </string-array>
+    <string-array name="country44">
+        <item name="code">56</item>
+        <item name="iso_code">CL</item>
+        <item name="country">Chile</item>
+    </string-array>
+    <string-array name="country45">
+        <item name="code">86</item>
+        <item name="iso_code">CN</item>
+        <item name="country">China</item>
+    </string-array>
+    <string-array name="country46">
+        <item name="code">61</item>
+        <item name="iso_code">CX</item>
+        <item name="country">Christmas Island</item>
+    </string-array>
+    <string-array name="country47">
+        <item name="code">61</item>
+        <item name="iso_code">CC</item>
+        <item name="country">Cocos (Keeling) Islands</item>
+    </string-array>
+    <string-array name="country48">
+        <item name="code">57</item>
+        <item name="iso_code">CO</item>
+        <item name="country">Colombia</item>
+    </string-array>
+    <string-array name="country49">
+        <item name="code">269</item>
+        <item name="iso_code">KM</item>
+        <item name="country">Comoros</item>
+    </string-array>
+    <string-array name="country50">
+        <item name="code">682</item>
+        <item name="iso_code">CK</item>
+        <item name="country">Cook Islands</item>
+    </string-array>
+    <string-array name="country51">
+        <item name="code">506</item>
+        <item name="iso_code">CR</item>
+        <item name="country">Costa Rica</item>
+    </string-array>
+    <string-array name="country52">
+        <item name="code">385</item>
+        <item name="iso_code">HR</item>
+        <item name="country">Croatia</item>
+    </string-array>
+    <string-array name="country53">
+        <item name="code">53</item>
+        <item name="iso_code">CU</item>
+        <item name="country">Cuba</item>
+    </string-array>
+    <string-array name="country54">
+        <item name="code">357</item>
+        <item name="iso_code">CY</item>
+        <item name="country">Cyprus</item>
+    </string-array>
+    <string-array name="country55">
+        <item name="code">420</item>
+        <item name="iso_code">CZ</item>
+        <item name="country">Czech Republic</item>
+    </string-array>
+    <string-array name="country56">
+        <item name="code">243</item>
+        <item name="iso_code">CD</item>
+        <item name="country">Democratic Republic of the Congo</item>
+    </string-array>
+    <string-array name="country57">
+        <item name="code">45</item>
+        <item name="iso_code">DK</item>
+        <item name="country">Denmark</item>
+    </string-array>
+    <string-array name="country58">
+        <item name="code">253</item>
+        <item name="iso_code">DJ</item>
+        <item name="country">Djibouti</item>
+    </string-array>
+    <string-array name="country59">
+        <item name="code">1767</item>
+        <item name="iso_code">DM</item>
+        <item name="country">Dominica</item>
+    </string-array>
+    <string-array name="country60">
+        <item name="code">1809</item>
+        <item name="iso_code">DO</item>
+        <item name="country">Dominican Republic</item>
+    </string-array>
+    <string-array name="country61">
+        <item name="code">593</item>
+        <item name="iso_code">EC</item>
+        <item name="country">Ecuador</item>
+    </string-array>
+    <string-array name="country62">
+        <item name="code">20</item>
+        <item name="iso_code">EG</item>
+        <item name="country">Egypt</item>
+    </string-array>
+    <string-array name="country63">
+        <item name="code">503</item>
+        <item name="iso_code">SV</item>
+        <item name="country">El Salvador</item>
+    </string-array>
+    <string-array name="country64">
+        <item name="code">240</item>
+        <item name="iso_code">GQ</item>
+        <item name="country">Equatorial Guinea</item>
+    </string-array>
+    <string-array name="country65">
+        <item name="code">291</item>
+        <item name="iso_code">ER</item>
+        <item name="country">Eritrea</item>
+    </string-array>
+    <string-array name="country66">
+        <item name="code">372</item>
+        <item name="iso_code">EE</item>
+        <item name="country">Estonia</item>
+    </string-array>
+    <string-array name="country67">
+        <item name="code">251</item>
+        <item name="iso_code">ET</item>
+        <item name="country">Ethiopia</item>
+    </string-array>
+    <string-array name="country68">
+        <item name="code">500</item>
+        <item name="iso_code">FK</item>
+        <item name="country">Falkland Islands</item>
+    </string-array>
+    <string-array name="country69">
+        <item name="code">298</item>
+        <item name="iso_code">FO</item>
+        <item name="country">Faroe Islands</item>
+    </string-array>
+    <string-array name="country70">
+        <item name="code">679</item>
+        <item name="iso_code">FJ</item>
+        <item name="country">Fiji</item>
+    </string-array>
+    <string-array name="country71">
+        <item name="code">358</item>
+        <item name="iso_code">FI</item>
+        <item name="country">Finland</item>
+    </string-array>
+    <string-array name="country72">
+        <item name="code">33</item>
+        <item name="iso_code">FR</item>
+        <item name="country">France</item>
+    </string-array>
+    <string-array name="country73">
+        <item name="code">689</item>
+        <item name="iso_code">PF</item>
+        <item name="country">French Polynesia</item>
+    </string-array>
+    <string-array name="country74">
+        <item name="code">241</item>
+        <item name="iso_code">GA</item>
+        <item name="country">Gabon</item>
+    </string-array>
+    <string-array name="country75">
+        <item name="code">220</item>
+        <item name="iso_code">GM</item>
+        <item name="country">Gambia</item>
+    </string-array>
+    <string-array name="country77">
+        <item name="code">995</item>
+        <item name="iso_code">GE</item>
+        <item name="country">Georgia</item>
+    </string-array>
+    <string-array name="country78">
+        <item name="code">49</item>
+        <item name="iso_code">DE</item>
+        <item name="country">Germany</item>
+    </string-array>
+    <string-array name="country79">
+        <item name="code">233</item>
+        <item name="iso_code">GH</item>
+        <item name="country">Ghana</item>
+    </string-array>
+    <string-array name="country80">
+        <item name="code">350</item>
+        <item name="iso_code">GI</item>
+        <item name="country">Gibraltar</item>
+    </string-array>
+    <string-array name="country81">
+        <item name="code">30</item>
+        <item name="iso_code">GR</item>
+        <item name="country">Greece</item>
+    </string-array>
+    <string-array name="country82">
+        <item name="code">299</item>
+        <item name="iso_code">GL</item>
+        <item name="country">Greenland</item>
+    </string-array>
+    <string-array name="country83">
+        <item name="code">1473</item>
+        <item name="iso_code">GD</item>
+        <item name="country">Grenada</item>
+    </string-array>
+    <string-array name="country84">
+        <item name="code">1671</item>
+        <item name="iso_code">GU</item>
+        <item name="country">Guam</item>
+    </string-array>
+    <string-array name="country85">
+        <item name="code">502</item>
+        <item name="iso_code">GT</item>
+        <item name="country">Guatemala</item>
+    </string-array>
+    <string-array name="country86">
+        <item name="code">224</item>
+        <item name="iso_code">GN</item>
+        <item name="country">Guinea</item>
+    </string-array>
+    <string-array name="country87">
+        <item name="code">245</item>
+        <item name="iso_code">GW</item>
+        <item name="country">Guinea-Bissau</item>
+    </string-array>
+    <string-array name="country88">
+        <item name="code">592</item>
+        <item name="iso_code">GY</item>
+        <item name="country">Guyana</item>
+    </string-array>
+    <string-array name="country89">
+        <item name="code">509</item>
+        <item name="iso_code">HT</item>
+        <item name="country">Haiti</item>
+    </string-array>
+    <string-array name="country90">
+        <item name="code">39</item>
+        <item name="iso_code">VA</item>
+        <item name="country">Holy See (Vatican City)</item>
+    </string-array>
+    <string-array name="country91">
+        <item name="code">504</item>
+        <item name="iso_code">HN</item>
+        <item name="country">Honduras</item>
+    </string-array>
+    <string-array name="country92">
+        <item name="code">852</item>
+        <item name="iso_code">HK</item>
+        <item name="country">Hong Kong</item>
+    </string-array>
+    <string-array name="country93">
+        <item name="code">36</item>
+        <item name="iso_code">HU</item>
+        <item name="country">Hungary</item>
+    </string-array>
+    <string-array name="country94">
+        <item name="code">354</item>
+        <item name="iso_code">IS</item>
+        <item name="country">Iceland</item>
+    </string-array>
+    <string-array name="country95">
+        <item name="code">91</item>
+        <item name="iso_code">IN</item>
+        <item name="country">India</item>
+    </string-array>
+    <string-array name="country96">
+        <item name="code">62</item>
+        <item name="iso_code">ID</item>
+        <item name="country">Indonesia</item>
+    </string-array>
+    <string-array name="country97">
+        <item name="code">98</item>
+        <item name="iso_code">IR</item>
+        <item name="country">Iran</item>
+    </string-array>
+    <string-array name="country98">
+        <item name="code">964</item>
+        <item name="iso_code">IQ</item>
+        <item name="country">Iraq</item>
+    </string-array>
+    <string-array name="country99">
+        <item name="code">353</item>
+        <item name="iso_code">IE</item>
+        <item name="country">Ireland</item>
+    </string-array>
+    <string-array name="country100">
+        <item name="code">44</item>
+        <item name="iso_code">IM</item>
+        <item name="country">Isle of Man</item>
+    </string-array>
+    <string-array name="country101">
+        <item name="code">972</item>
+        <item name="iso_code">IL</item>
+        <item name="country">Israel</item>
+    </string-array>
+    <string-array name="country102">
+        <item name="code">39</item>
+        <item name="iso_code">IT</item>
+        <item name="country">Italy</item>
+    </string-array>
+    <string-array name="country103">
+        <item name="code">225</item>
+        <item name="iso_code">CI</item>
+        <item name="country">Ivory Coast</item>
+    </string-array>
+    <string-array name="country104">
+        <item name="code">1876</item>
+        <item name="iso_code">JM</item>
+        <item name="country">Jamaica</item>
+    </string-array>
+    <string-array name="country105">
+        <item name="code">81</item>
+        <item name="iso_code">JP</item>
+        <item name="country">Japan</item>
+    </string-array>
+    <string-array name="country107">
+        <item name="code">962</item>
+        <item name="iso_code">JO</item>
+        <item name="country">Jordan</item>
+    </string-array>
+    <string-array name="country108">
+        <item name="code">7</item>
+        <item name="iso_code">KZ</item>
+        <item name="country">Kazakhstan</item>
+    </string-array>
+    <string-array name="country109">
+        <item name="code">254</item>
+        <item name="iso_code">KE</item>
+        <item name="country">Kenya</item>
+    </string-array>
+    <string-array name="country110">
+        <item name="code">686</item>
+        <item name="iso_code">KI</item>
+        <item name="country">Kiribati</item>
+    </string-array>
+    <string-array name="country112">
+        <item name="code">965</item>
+        <item name="iso_code">KW</item>
+        <item name="country">Kuwait</item>
+    </string-array>
+    <string-array name="country113">
+        <item name="code">996</item>
+        <item name="iso_code">KG</item>
+        <item name="country">Kyrgyzstan</item>
+    </string-array>
+    <string-array name="country114">
+        <item name="code">856</item>
+        <item name="iso_code">LA</item>
+        <item name="country">Laos</item>
+    </string-array>
+    <string-array name="country115">
+        <item name="code">371</item>
+        <item name="iso_code">LV</item>
+        <item name="country">Latvia</item>
+    </string-array>
+    <string-array name="country116">
+        <item name="code">961</item>
+        <item name="iso_code">LB</item>
+        <item name="country">Lebanon</item>
+    </string-array>
+    <string-array name="country117">
+        <item name="code">266</item>
+        <item name="iso_code">LS</item>
+        <item name="country">Lesotho</item>
+    </string-array>
+    <string-array name="country118">
+        <item name="code">231</item>
+        <item name="iso_code">LR</item>
+        <item name="country">Liberia</item>
+    </string-array>
+    <string-array name="country119">
+        <item name="code">218</item>
+        <item name="iso_code">LY</item>
+        <item name="country">Libya</item>
+    </string-array>
+    <string-array name="country120">
+        <item name="code">423</item>
+        <item name="iso_code">LI</item>
+        <item name="country">Liechtenstein</item>
+    </string-array>
+    <string-array name="country121">
+        <item name="code">370</item>
+        <item name="iso_code">LT</item>
+        <item name="country">Lithuania</item>
+    </string-array>
+    <string-array name="country122">
+        <item name="code">352</item>
+        <item name="iso_code">LU</item>
+        <item name="country">Luxembourg</item>
+    </string-array>
+    <string-array name="country123">
+        <item name="code">853</item>
+        <item name="iso_code">MO</item>
+        <item name="country">Macau</item>
+    </string-array>
+    <string-array name="country124">
+        <item name="code">389</item>
+        <item name="iso_code">MK</item>
+        <item name="country">Macedonia</item>
+    </string-array>
+    <string-array name="country125">
+        <item name="code">261</item>
+        <item name="iso_code">MG</item>
+        <item name="country">Madagascar</item>
+    </string-array>
+    <string-array name="country126">
+        <item name="code">265</item>
+        <item name="iso_code">MW</item>
+        <item name="country">Malawi</item>
+    </string-array>
+    <string-array name="country127">
+        <item name="code">60</item>
+        <item name="iso_code">MY</item>
+        <item name="country">Malaysia</item>
+    </string-array>
+    <string-array name="country128">
+        <item name="code">960</item>
+        <item name="iso_code">MV</item>
+        <item name="country">Maldives</item>
+    </string-array>
+    <string-array name="country129">
+        <item name="code">223</item>
+        <item name="iso_code">ML</item>
+        <item name="country">Mali</item>
+    </string-array>
+    <string-array name="country130">
+        <item name="code">356</item>
+        <item name="iso_code">MT</item>
+        <item name="country">Malta</item>
+    </string-array>
+    <string-array name="country131">
+        <item name="code">692</item>
+        <item name="iso_code">MH</item>
+        <item name="country">Marshall Islands</item>
+    </string-array>
+    <string-array name="country132">
+        <item name="code">222</item>
+        <item name="iso_code">MR</item>
+        <item name="country">Mauritania</item>
+    </string-array>
+    <string-array name="country133">
+        <item name="code">230</item>
+        <item name="iso_code">MU</item>
+        <item name="country">Mauritius</item>
+    </string-array>
+    <string-array name="country134">
+        <item name="code">262</item>
+        <item name="iso_code">YT</item>
+        <item name="country">Mayotte</item>
+    </string-array>
+    <string-array name="country135">
+        <item name="code">52</item>
+        <item name="iso_code">MX</item>
+        <item name="country">Mexico</item>
+    </string-array>
+    <string-array name="country136">
+        <item name="code">691</item>
+        <item name="iso_code">FM</item>
+        <item name="country">Micronesia</item>
+    </string-array>
+    <string-array name="country137">
+        <item name="code">373</item>
+        <item name="iso_code">MD</item>
+        <item name="country">Moldova</item>
+    </string-array>
+    <string-array name="country138">
+        <item name="code">377</item>
+        <item name="iso_code">MC</item>
+        <item name="country">Monaco</item>
+    </string-array>
+    <string-array name="country139">
+        <item name="code">976</item>
+        <item name="iso_code">MN</item>
+        <item name="country">Mongolia</item>
+    </string-array>
+    <string-array name="country140">
+        <item name="code">382</item>
+        <item name="iso_code">ME</item>
+        <item name="country">Montenegro</item>
+    </string-array>
+    <string-array name="country141">
+        <item name="code">1664</item>
+        <item name="iso_code">MS</item>
+        <item name="country">Montserrat</item>
+    </string-array>
+    <string-array name="country142">
+        <item name="code">212</item>
+        <item name="iso_code">MA</item>
+        <item name="country">Morocco</item>
+    </string-array>
+    <string-array name="country143">
+        <item name="code">258</item>
+        <item name="iso_code">MZ</item>
+        <item name="country">Mozambique</item>
+    </string-array>
+    <string-array name="country144">
+        <item name="code">264</item>
+        <item name="iso_code">NA</item>
+        <item name="country">Namibia</item>
+    </string-array>
+    <string-array name="country145">
+        <item name="code">674</item>
+        <item name="iso_code">NR</item>
+        <item name="country">Nauru</item>
+    </string-array>
+    <string-array name="country146">
+        <item name="code">977</item>
+        <item name="iso_code">NP</item>
+        <item name="country">Nepal</item>
+    </string-array>
+    <string-array name="country147">
+        <item name="code">31</item>
+        <item name="iso_code">NL</item>
+        <item name="country">Netherlands</item>
+    </string-array>
+    <string-array name="country148">
+        <item name="code">599</item>
+        <item name="iso_code">AN</item>
+        <item name="country">Netherlands Antilles</item>
+    </string-array>
+    <string-array name="country149">
+        <item name="code">687</item>
+        <item name="iso_code">NC</item>
+        <item name="country">New Caledonia</item>
+    </string-array>
+    <string-array name="country150">
+        <item name="code">64</item>
+        <item name="iso_code">NZ</item>
+        <item name="country">New Zealand</item>
+    </string-array>
+    <string-array name="country151">
+        <item name="code">505</item>
+        <item name="iso_code">NI</item>
+        <item name="country">Nicaragua</item>
+    </string-array>
+    <string-array name="country152">
+        <item name="code">227</item>
+        <item name="iso_code">NE</item>
+        <item name="country">Niger</item>
+    </string-array>
+    <string-array name="country153">
+        <item name="code">234</item>
+        <item name="iso_code">NG</item>
+        <item name="country">Nigeria</item>
+    </string-array>
+    <string-array name="country154">
+        <item name="code">683</item>
+        <item name="iso_code">NU</item>
+        <item name="country">Niue</item>
+    </string-array>
+    <string-array name="country156">
+        <item name="code">850</item>
+        <item name="iso_code">KP</item>
+        <item name="country">North Korea</item>
+    </string-array>
+    <string-array name="country157">
+        <item name="code">1670</item>
+        <item name="iso_code">MP</item>
+        <item name="country">Northern Mariana Islands</item>
+    </string-array>
+    <string-array name="country158">
+        <item name="code">47</item>
+        <item name="iso_code">NO</item>
+        <item name="country">Norway</item>
+    </string-array>
+    <string-array name="country159">
+        <item name="code">968</item>
+        <item name="iso_code">OM</item>
+        <item name="country">Oman</item>
+    </string-array>
+    <string-array name="country160">
+        <item name="code">92</item>
+        <item name="iso_code">PK</item>
+        <item name="country">Pakistan</item>
+    </string-array>
+    <string-array name="country161">
+        <item name="code">680</item>
+        <item name="iso_code">PW</item>
+        <item name="country">Palau</item>
+    </string-array>
+    <string-array name="country162">
+        <item name="code">507</item>
+        <item name="iso_code">PA</item>
+        <item name="country">Panama</item>
+    </string-array>
+    <string-array name="country163">
+        <item name="code">675</item>
+        <item name="iso_code">PG</item>
+        <item name="country">Papua New Guinea</item>
+    </string-array>
+    <string-array name="country164">
+        <item name="code">595</item>
+        <item name="iso_code">PY</item>
+        <item name="country">Paraguay</item>
+    </string-array>
+    <string-array name="country165">
+        <item name="code">51</item>
+        <item name="iso_code">PE</item>
+        <item name="country">Peru</item>
+    </string-array>
+    <string-array name="country166">
+        <item name="code">63</item>
+        <item name="iso_code">PH</item>
+        <item name="country">Philippines</item>
+    </string-array>
+    <string-array name="country167">
+        <item name="code">870</item>
+        <item name="iso_code">PN</item>
+        <item name="country">Pitcairn Islands</item>
+    </string-array>
+    <string-array name="country168">
+        <item name="code">48</item>
+        <item name="iso_code">PL</item>
+        <item name="country">Poland</item>
+    </string-array>
+    <string-array name="country169">
+        <item name="code">351</item>
+        <item name="iso_code">PT</item>
+        <item name="country">Portugal</item>
+    </string-array>
+    <string-array name="country170">
+        <item name="code">1</item>
+        <item name="iso_code">PR</item>
+        <item name="country">Puerto Rico</item>
+    </string-array>
+    <string-array name="country171">
+        <item name="code">974</item>
+        <item name="iso_code">QA</item>
+        <item name="country">Qatar</item>
+    </string-array>
+    <string-array name="country172">
+        <item name="code">242</item>
+        <item name="iso_code">CG</item>
+        <item name="country">Republic of the Congo</item>
+    </string-array>
+    <string-array name="country173">
+        <item name="code">40</item>
+        <item name="iso_code">RO</item>
+        <item name="country">Romania</item>
+    </string-array>
+    <string-array name="country174">
+        <item name="code">7</item>
+        <item name="iso_code">RU</item>
+        <item name="country">Russia</item>
+    </string-array>
+    <string-array name="country175">
+        <item name="code">250</item>
+        <item name="iso_code">RW</item>
+        <item name="country">Rwanda</item>
+    </string-array>
+    <string-array name="country176">
+        <item name="code">590</item>
+        <item name="iso_code">BL</item>
+        <item name="country">Saint Barthelemy</item>
+    </string-array>
+    <string-array name="country177">
+        <item name="code">290</item>
+        <item name="iso_code">SH</item>
+        <item name="country">Saint Helena</item>
+    </string-array>
+    <string-array name="country178">
+        <item name="code">1869</item>
+        <item name="iso_code">KN</item>
+        <item name="country">Saint Kitts and Nevis</item>
+    </string-array>
+    <string-array name="country179">
+        <item name="code">1758</item>
+        <item name="iso_code">LC</item>
+        <item name="country">Saint Lucia</item>
+    </string-array>
+    <string-array name="country180">
+        <item name="code">1599</item>
+        <item name="iso_code">MF</item>
+        <item name="country">Saint Martin</item>
+    </string-array>
+    <string-array name="country181">
+        <item name="code">508</item>
+        <item name="iso_code">PM</item>
+        <item name="country">Saint Pierre and Miquelon</item>
+    </string-array>
+    <string-array name="country182">
+        <item name="code">1784</item>
+        <item name="iso_code">VC</item>
+        <item name="country">Saint Vincent and the Grenadines</item>
+    </string-array>
+    <string-array name="country183">
+        <item name="code">685</item>
+        <item name="iso_code">WS</item>
+        <item name="country">Samoa</item>
+    </string-array>
+    <string-array name="country184">
+        <item name="code">378</item>
+        <item name="iso_code">SM</item>
+        <item name="country">San Marino</item>
+    </string-array>
+    <string-array name="country185">
+        <item name="code">239</item>
+        <item name="iso_code">ST</item>
+        <item name="country">Sao Tome and Principe</item>
+    </string-array>
+    <string-array name="country186">
+        <item name="code">966</item>
+        <item name="iso_code">SA</item>
+        <item name="country">Saudi Arabia</item>
+    </string-array>
+    <string-array name="country187">
+        <item name="code">221</item>
+        <item name="iso_code">SN</item>
+        <item name="country">Senegal</item>
+    </string-array>
+    <string-array name="country188">
+        <item name="code">381</item>
+        <item name="iso_code">RS</item>
+        <item name="country">Serbia</item>
+    </string-array>
+    <string-array name="country189">
+        <item name="code">248</item>
+        <item name="iso_code">SC</item>
+        <item name="country">Seychelles</item>
+    </string-array>
+    <string-array name="country190">
+        <item name="code">232</item>
+        <item name="iso_code">SL</item>
+        <item name="country">Sierra Leone</item>
+    </string-array>
+    <string-array name="country191">
+        <item name="code">65</item>
+        <item name="iso_code">SG</item>
+        <item name="country">Singapore</item>
+    </string-array>
+    <string-array name="country192">
+        <item name="code">421</item>
+        <item name="iso_code">SK</item>
+        <item name="country">Slovakia</item>
+    </string-array>
+    <string-array name="country193">
+        <item name="code">386</item>
+        <item name="iso_code">SI</item>
+        <item name="country">Slovenia</item>
+    </string-array>
+    <string-array name="country194">
+        <item name="code">677</item>
+        <item name="iso_code">SB</item>
+        <item name="country">Solomon Islands</item>
+    </string-array>
+    <string-array name="country195">
+        <item name="code">252</item>
+        <item name="iso_code">SO</item>
+        <item name="country">Somalia</item>
+    </string-array>
+    <string-array name="country196">
+        <item name="code">27</item>
+        <item name="iso_code">ZA</item>
+        <item name="country">South Africa</item>
+    </string-array>
+    <string-array name="country197">
+        <item name="code">82</item>
+        <item name="iso_code">KR</item>
+        <item name="country">South Korea</item>
+    </string-array>
+    <string-array name="country198">
+        <item name="code">34</item>
+        <item name="iso_code">ES</item>
+        <item name="country">Spain</item>
+    </string-array>
+    <string-array name="country199">
+        <item name="code">94</item>
+        <item name="iso_code">LK</item>
+        <item name="country">Sri Lanka</item>
+    </string-array>
+    <string-array name="country200">
+        <item name="code">249</item>
+        <item name="iso_code">SD</item>
+        <item name="country">Sudan</item>
+    </string-array>
+    <string-array name="country201">
+        <item name="code">597</item>
+        <item name="iso_code">SR</item>
+        <item name="country">Suriname</item>
+    </string-array>
+    <string-array name="country203">
+        <item name="code">268</item>
+        <item name="iso_code">SZ</item>
+        <item name="country">Swaziland</item>
+    </string-array>
+    <string-array name="country204">
+        <item name="code">46</item>
+        <item name="iso_code">SE</item>
+        <item name="country">Sweden</item>
+    </string-array>
+    <string-array name="country205">
+        <item name="code">41</item>
+        <item name="iso_code">CH</item>
+        <item name="country">Switzerland</item>
+    </string-array>
+    <string-array name="country206">
+        <item name="code">963</item>
+        <item name="iso_code">SY</item>
+        <item name="country">Syria</item>
+    </string-array>
+    <string-array name="country207">
+        <item name="code">886</item>
+        <item name="iso_code">TW</item>
+        <item name="country">Taiwan</item>
+    </string-array>
+    <string-array name="country208">
+        <item name="code">992</item>
+        <item name="iso_code">TJ</item>
+        <item name="country">Tajikistan</item>
+    </string-array>
+    <string-array name="country209">
+        <item name="code">255</item>
+        <item name="iso_code">TZ</item>
+        <item name="country">Tanzania</item>
+    </string-array>
+    <string-array name="country210">
+        <item name="code">66</item>
+        <item name="iso_code">TH</item>
+        <item name="country">Thailand</item>
+    </string-array>
+    <string-array name="country211">
+        <item name="code">670</item>
+        <item name="iso_code">TL</item>
+        <item name="country">Timor-Leste</item>
+    </string-array>
+    <string-array name="country212">
+        <item name="code">228</item>
+        <item name="iso_code">TG</item>
+        <item name="country">Togo</item>
+    </string-array>
+    <string-array name="country213">
+        <item name="code">690</item>
+        <item name="iso_code">TK</item>
+        <item name="country">Tokelau</item>
+    </string-array>
+    <string-array name="country214">
+        <item name="code">676</item>
+        <item name="iso_code">TO</item>
+        <item name="country">Tonga</item>
+    </string-array>
+    <string-array name="country215">
+        <item name="code">1868</item>
+        <item name="iso_code">TT</item>
+        <item name="country">Trinidad and Tobago</item>
+    </string-array>
+    <string-array name="country216">
+        <item name="code">216</item>
+        <item name="iso_code">TN</item>
+        <item name="country">Tunisia</item>
+    </string-array>
+    <string-array name="country217">
+        <item name="code">90</item>
+        <item name="iso_code">TR</item>
+        <item name="country">Turkey</item>
+    </string-array>
+    <string-array name="country218">
+        <item name="code">993</item>
+        <item name="iso_code">TM</item>
+        <item name="country">Turkmenistan</item>
+    </string-array>
+    <string-array name="country219">
+        <item name="code">1649</item>
+        <item name="iso_code">TC</item>
+        <item name="country">Turks and Caicos Islands</item>
+    </string-array>
+    <string-array name="country220">
+        <item name="code">688</item>
+        <item name="iso_code">TV</item>
+        <item name="country">Tuvalu</item>
+    </string-array>
+    <string-array name="country221">
+        <item name="code">256</item>
+        <item name="iso_code">UG</item>
+        <item name="country">Uganda</item>
+    </string-array>
+    <string-array name="country222">
+        <item name="code">380</item>
+        <item name="iso_code">UA</item>
+        <item name="country">Ukraine</item>
+    </string-array>
+    <string-array name="country223">
+        <item name="code">971</item>
+        <item name="iso_code">AE</item>
+        <item name="country">United Arab Emirates</item>
+    </string-array>
+    <string-array name="country224">
+        <item name="code">44</item>
+        <item name="iso_code">GB</item>
+        <item name="country">United Kingdom</item>
+    </string-array>
+    <string-array name="country225">
+        <item name="code">1</item>
+        <item name="iso_code">US</item>
+        <item name="country">United States</item>
+    </string-array>
+    <string-array name="country226">
+        <item name="code">598</item>
+        <item name="iso_code">UY</item>
+        <item name="country">Uruguay</item>
+    </string-array>
+    <string-array name="country227">
+        <item name="code">1340</item>
+        <item name="iso_code">VI</item>
+        <item name="country">US Virgin Islands</item>
+    </string-array>
+    <string-array name="country228">
+        <item name="code">998</item>
+        <item name="iso_code">UZ</item>
+        <item name="country">Uzbekistan</item>
+    </string-array>
+    <string-array name="country229">
+        <item name="code">678</item>
+        <item name="iso_code">VU</item>
+        <item name="country">Vanuatu</item>
+    </string-array>
+    <string-array name="country230">
+        <item name="code">58</item>
+        <item name="iso_code">VE</item>
+        <item name="country">Venezuela</item>
+    </string-array>
+    <string-array name="country231">
+        <item name="code">84</item>
+        <item name="iso_code">VN</item>
+        <item name="country">Vietnam</item>
+    </string-array>
+    <string-array name="country232">
+        <item name="code">681</item>
+        <item name="iso_code">WF</item>
+        <item name="country">Wallis and Futuna</item>
+    </string-array>
+    <string-array name="country235">
+        <item name="code">967</item>
+        <item name="iso_code">YE</item>
+        <item name="country">Yemen</item>
+    </string-array>
+    <string-array name="country236">
+        <item name="code">260</item>
+        <item name="iso_code">ZM</item>
+        <item name="country">Zambia</item>
+    </string-array>
+    <string-array name="country237">
+        <item name="code">263</item>
+        <item name="iso_code">ZW</item>
+        <item name="country">Zimbabwe</item>
+    </string-array>
+
+    <string name="title_activity_registration_success_parent_student">RegistrationSuccessParentStudent</string>
+    <string name="title_activity_individual_educator_home">IndividualEducatorHome</string>
+    <string name="title_activity_educator_group_msg"></string>
+    <string name="title_activity_educator_msgs">Messages</string>
+    <string name="title_activity_educator_single_msg">Messages</string>
+    <string name="title_activity_educator_events">Monthly Events</string>
+    <string name="title_activity_edit_account">Schoolo</string>
+
+    <!-- Conversations app strings -->
+    <!--
+    <string name="app_name" translatable="false">Conversations</string>
+    <string name="action_settings">Settings</string>
+    -->
+    <string name="action_add">New conversation</string>
+    <string name="action_accounts">Manage accounts</string>
+    <string name="action_end_conversation">End this conversation</string>
+    <string name="action_contact_details">Contact details</string>
+    <string name="action_muc_details">Conference details</string>
+    <string name="action_secure">Secure conversation</string>
+    <string name="action_add_account">Add account</string>
+    <string name="action_edit_contact">Edit name</string>
+    <string name="action_add_phone_book">Add to phone book</string>
+    <string name="action_delete_contact">Delete from roster</string>
+    <string name="action_block_contact">Block contact</string>
+    <string name="action_unblock_contact">Unblock contact</string>
+    <string name="action_block_domain">Block domain</string>
+    <string name="action_unblock_domain">Unblock domain</string>
+    <string name="title_activity_manage_accounts">Manage Accounts</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_conference_details">Conference Details</string>
+    <string name="title_activity_contact_details">Contact Details</string>
+    <string name="title_activity_conversations">Conversations</string>
+    <string name="title_activity_sharewith">Share with Conversation</string>
+    <string name="title_activity_start_conversation">Start Conversation</string>
+    <string name="title_activity_choose_contact">Choose contact</string>
+    <string name="title_activity_block_list">Block list</string>
+    <string name="just_now">just now</string>
+    <string name="minute_ago">1 min ago</string>
+    <string name="minutes_ago">%d mins ago</string>
+    <string name="unread_conversations">unread Conversations</string>
+    <string name="sending">sending…</string>
+    <string name="encrypted_message">Decrypting message. Please wait…</string>
+    <string name="nick_in_use">Nickname is already in use</string>
+    <string name="admin">Admin</string>
+    <string name="owner">Owner</string>
+    <string name="moderator">Moderator</string>
+    <string name="participant">Participant</string>
+    <string name="visitor">Visitor</string>
+    <string name="remove_contact_text">Would you like to remove %s from your roster? The conversation associated with this contact will not be removed.</string>
+    <string name="block_contact_text">Would you like to block %s from sending you messages?</string>
+    <string name="unblock_contact_text">Would you like to unblock %s and allow them to send you messages?</string>
+    <string name="block_domain_text">Block all contacts from %s?</string>
+    <string name="unblock_domain_text">Unblock all contacts from %s?</string>
+    <string name="contact_blocked">Contact blocked</string>
+    <string name="remove_bookmark_text">Would you like to remove %s as a bookmark? The conversation associated with this bookmark will not be removed.</string>
+    <string name="register_account">Register new account on server</string>
+    <string name="change_password_on_server">Change password on server</string>
+    <string name="share_with">Share with…</string>
+    <string name="start_conversation">Start Conversation</string>
+    <string name="invite_contact">Invite Contact</string>
+    <string name="contacts">Contacts</string>
+    <string name="cancel">Cancel</string>
+    <string name="set">Set</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="block">Block</string>
+    <string name="unblock">Unblock</string>
+    <string name="save">Save</string>
+    <string name="ok">OK</string>
+    <string name="crash_report_title">Conversations has crashed</string>
+    <string name="crash_report_message">By sending in stack traces you are helping the ongoing development of Conversations\n<b>Warning:</b> This will use your XMPP account to send the stack trace to the developer.</string>
+    <string name="send_now">Send now</string>
+    <string name="send_never">Never ask again</string>
+    <string name="problem_connecting_to_account">Unable to connect to account</string>
+    <string name="problem_connecting_to_accounts">Unable to connect to multiple accounts</string>
+    <string name="touch_to_fix">Touch here to manage your accounts</string>
+    <string name="attach_file">Attach file</string>
+    <string name="not_in_roster">The contact is not in your roster. Would you like to add it?</string>
+    <string name="add_contact">Add contact</string>
+    <string name="send_failed">delivery failed</string>
+    <string name="send_rejected">rejected</string>
+    <string name="preparing_image">Preparing image for transmission</string>
+    <string name="action_clear_history">Clear history</string>
+    <string name="clear_conversation_history">Clear Conversation History</string>
+    <string name="clear_histor_msg">Do you want to delete all messages within this Conversation?\n\n<b>Warning:</b> This will not influence messages stored on other devices or servers.</string>
+    <string name="delete_messages">Delete messages</string>
+    <string name="also_end_conversation">End this conversations afterwards</string>
+    <string name="choose_presence">Choose presence to contact</string>
+    <string name="send_plain_text_message">Send plain text message</string>
+    <string name="send_otr_message">Send OTR encrypted message</string>
+    <string name="send_pgp_message">Send OpenPGP encrypted message</string>
+    <string name="your_nick_has_been_changed">Your nickname has been changed</string>
+    <string name="download_image">Download Image</string>
+    <string name="send_unencrypted">Send unencrypted</string>
+    <string name="decryption_failed">Decryption failed. Maybe you don’t have the proper private key.</string>
+    <string name="openkeychain_required">OpenKeychain</string>
+    <string name="openkeychain_required_long">Conversations utilizes a third party app called <b>OpenKeychain</b> to encrypt and decrypt messages and to manage your public keys.\n\nOpenKeychain is licensed under GPLv3 and available on F-Droid and Google Play.\n\n<small>(Please restart Conversations afterwards.)</small></string>
+    <string name="restart">Restart</string>
+    <string name="install">Install</string>
+    <string name="offering">offering…</string>
+    <string name="waiting">waiting…</string>
+    <string name="no_pgp_key">No OpenPGP Key found</string>
+    <string name="contact_has_no_pgp_key">Conversations is unable to encrypt your messages because your contact is not announcing his or hers public key.\n\n<small>Please ask your contact to setup OpenPGP.</small></string>
+    <string name="no_pgp_keys">No OpenPGP Keys found</string>
+    <string name="contacts_have_no_pgp_keys">Conversations is unable to encrypt your messages because your contacts are not announcing their public key.\n\n<small>Please ask your contacts to setup OpenPGP.</small></string>
+    <string name="encrypted_message_received"><i>Encrypted message received. Touch to view and decrypt.</i></string>
+    <string name="pref_general">General</string>
+    <string name="pref_xmpp_resource">XMPP resource</string>
+    <string name="pref_xmpp_resource_summary">The name this client identifies itself with</string>
+    <string name="pref_accept_files">Accept files</string>
+    <string name="pref_accept_files_summary">Automatically accept files smaller than…</string>
+    <string name="pref_notification_settings">Notification Settings</string>
+    <string name="pref_notifications">Notifications</string>
+    <string name="pref_notifications_summary">Notify when a new message arrives</string>
+    <string name="pref_vibrate">Vibrate</string>
+    <string name="pref_vibrate_summary">Also vibrate when a new message arrives</string>
+    <string name="pref_sound">Sound</string>
+    <string name="pref_sound_summary">Play ringtone with notification</string>
+    <string name="pref_conference_notifications">Conference notifications</string>
+    <string name="pref_conference_notifications_summary">Always notify when a new conference message arrives instead of only when highlighted</string>
+    <string name="pref_notification_grace_period">Notification grace period</string>
+    <string name="pref_notification_grace_period_summary">Disable notifications for a short time after a carbon copy was received</string>
+    <string name="pref_advanced_options">Advanced Options</string>
+    <string name="pref_never_send_crash">Never send crash reports</string>
+    <string name="pref_never_send_crash_summary">By sending in stack traces you are helping the ongoing development of Conversations</string>
+    <string name="pref_confirm_messages">Confirm Messages</string>
+    <string name="pref_confirm_messages_summary">Let your contact know when you have received and read a message</string>
+    <string name="pref_ui_options">UI Options</string>
+    <string name="openpgp_error">OpenKeychain reported an error</string>
+    <string name="error_decrypting_file">I/O Error decrypting file</string>
+    <string name="accept">Accept</string>
+    <string name="error">An error has occurred</string>
+    <string name="pref_grant_presence_updates">Grant presence updates</string>
+    <string name="pref_grant_presence_updates_summary">Preemptively grant and ask for presence subscription for contacts you created</string>
+    <string name="subscriptions">Subscriptions</string>
+    <string name="your_account">Your account</string>
+    <string name="keys">Keys</string>
+    <string name="send_presence_updates">Send presence updates</string>
+    <string name="receive_presence_updates">Receive presence updates</string>
+    <string name="ask_for_presence_updates">Ask for presence updates</string>
+    <string name="attach_choose_picture">Choose picture</string>
+    <string name="attach_take_picture">Take picture</string>
+    <string name="preemptively_grant">Preemptively grant subscription request</string>
+    <string name="error_not_an_image_file">The file you selected is not an image</string>
+    <string name="error_compressing_image">Error while converting the image file</string>
+    <string name="error_file_not_found">File not found</string>
+    <string name="error_io_exception">General I/O error. Maybe you ran out of storage space?</string>
+    <string name="error_security_exception_during_image_copy">The app you used to select this image did not provide us with enough permissions to read the file.\n\n<small>Use a different file manager to choose an image</small></string>
+    <string name="account_status_unknown">Unknown</string>
+    <string name="account_status_disabled">Temporarily disabled</string>
+    <string name="account_status_online">O</string>
+    <string name="account_status_connecting">C</string>
+    <string name="account_status_offline">Of</string>
+    <string name="account_status_unauthorized">Unauthorized</string>
+    <string name="account_status_not_found">Server not found</string>
+    <string name="account_status_no_internet">N</string>
+    <string name="account_status_regis_fail">Registration failed</string>
+    <string name="account_status_regis_conflict">Username already in use</string>
+    <string name="account_status_regis_success">Registration completed</string>
+    <string name="account_status_regis_not_sup">Server does not support registration</string>
+    <string name="account_status_security_error">Security error</string>
+    <string name="account_status_incompatible_server">Incompatible server</string>
+    <string name="encryption_choice_none">Plain text</string>
+    <string name="encryption_choice_otr">OTR</string>
+    <string name="encryption_choice_pgp">OpenPGP</string>
+    <string name="mgmt_account_edit">Edit account</string>
+    <string name="mgmt_account_delete">Delete account</string>
+    <string name="mgmt_account_disable">Temporarily disable</string>
+    <string name="mgmt_account_publish_avatar">Publish avatar</string>
+    <string name="mgmt_account_publish_pgp">Publish OpenPGP public key</string>
+    <string name="mgmt_account_enable">Enable account</string>
+    <string name="mgmt_account_are_you_sure">Are you sure?</string>
+    <string name="mgmt_account_delete_confirm_text">If you delete your account your entire conversation history will be lost</string>
+    <string name="attach_record_voice">Record voice</string>
+    <string name="account_settings_jabber_id">Jabber ID</string>
+    <string name="account_settings_password">Password</string>
+    <string name="account_settings_example_jabber_id">username@example.com</string>
+    <string name="account_settings_confirm_password">Confirm password</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="passwords_do_not_match">Passwords do not match</string>
+    <string name="invalid_jid">This is not a valid Jabber ID</string>
+    <string name="error_out_of_memory">Out of memory. Image is too large</string>
+    <string name="add_phone_book_text">Do you want to add %s to your phones contact list?</string>
+    <string name="contact_status_online">online</string>
+    <string name="contact_status_free_to_chat">free to chat</string>
+    <string name="contact_status_away">away</string>
+    <string name="contact_status_extended_away">extended away</string>
+    <string name="contact_status_do_not_disturb">do not disturb</string>
+    <string name="contact_status_offline">offline</string>
+    <string name="muc_details_conference">Conference</string>
+    <string name="muc_details_other_members">Other Members</string>
+    <string name="server_info_show_more">Server info</string>
+    <string name="server_info_mam">XEP-0313: MAM</string>
+    <string name="server_info_carbon_messages">XEP-0280: Message Carbons</string>
+    <string name="server_info_csi">XEP-0352: Client State Indication</string>
+    <string name="server_info_blocking">XEP-0191: Blocking Command</string>
+    <string name="server_info_roster_version">XEP-0237: Roster Versioning</string>
+    <string name="server_info_stream_management">XEP-0198: Stream Management</string>
+    <string name="server_info_pep">XEP-0163: PEP (Avatars)</string>
+    <string name="server_info_available">available</string>
+    <string name="server_info_unavailable">unavailable</string>
+    <string name="missing_public_keys">Missing public key announcements</string>
+    <string name="last_seen_now">last seen just now</string>
+    <string name="last_seen_min">last seen 1 minute ago</string>
+    <string name="last_seen_mins">last seen %d minutes ago</string>
+    <string name="last_seen_hour">last seen 1 hour ago</string>
+    <string name="last_seen_hours">last seen %d hours ago</string>
+    <string name="last_seen_day">last seen 1 day ago</string>
+    <string name="last_seen_days">last seen %d days ago</string>
+    <string name="never_seen">never seen</string>
+    <string name="install_openkeychain">Encrypted message. Please install OpenKeychain to decrypt.</string>
+    <string name="unknown_otr_fingerprint">Unknown OTR fingerprint</string>
+    <string name="openpgp_messages_found">OpenPGP encrypted messages found</string>
+    <string name="reception_failed">Reception failed</string>
+    <string name="your_fingerprint">Your fingerprint</string>
+    <string name="otr_fingerprint">OTR fingerprint</string>
+    <string name="verify">Verify</string>
+    <string name="decrypt">Decrypt</string>
+    <string name="conferences">Conferences</string>
+    <string name="search">Search</string>
+    <string name="create_contact">Create Contact</string>
+    <string name="join_conference">Join Conference</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="view_contact_details">View contact details</string>
+    <string name="block_contact">Block contact</string>
+    <string name="unblock_contact">Unblock contact</string>
+    <string name="create">Create</string>
+    <string name="contact_already_exists">The contact already exists</string>
+    <string name="join">Join</string>
+    <string name="conference_address">Conference address</string>
+    <string name="conference_address_example">room@conference.example.com</string>
+    <string name="save_as_bookmark">Save as bookmark</string>
+    <string name="delete_bookmark">Delete bookmark</string>
+    <string name="bookmark_already_exists">This bookmark already exists</string>
+    <string name="you">You</string>
+    <string name="action_edit_subject">Edit conference subject</string>
+    <string name="conference_not_found">Conference not found</string>
+    <string name="leave">Leave</string>
+    <string name="contact_added_you">Contact added you to contact list</string>
+    <string name="add_back">Add back</string>
+    <string name="contact_has_read_up_to_this_point">%s has read up to this point</string>
+    <string name="publish">Publish</string>
+    <string name="touch_to_choose_picture">Touch avatar to select picture from gallery</string>
+    <string name="publish_avatar_explanation">Please note: Everyone subscribed to your presence updates will be allowed to see this picture.</string>
+    <string name="publishing">Publishing…</string>
+    <string name="error_publish_avatar_server_reject">The server rejected your publication</string>
+    <string name="error_publish_avatar_converting">Something went wrong while converting your picture</string>
+    <string name="error_saving_avatar">Could not save avatar to disk</string>
+    <string name="or_long_press_for_default">(Or long press to bring back default)</string>
+    <string name="error_publish_avatar_no_server_support">Your server does not support the publication of avatars</string>
+    <string name="private_message">whispered</string>
+    <string name="private_message_to">to %s</string>
+    <string name="send_private_message_to">Send private message to %s</string>
+    <string name="connect">Connect</string>
+    <string name="account_already_exists">This account already exists</string>
+    <string name="next">Next</string>
+    <string name="server_info_session_established">Current session established</string>
+    <string name="additional_information">Additional Information</string>
+    <string name="skip">Skip</string>
+    <string name="disable_notifications">Disable notifications</string>
+    <string name="disable_notifications_for_this_conversation">Disable notifications for this conversation</string>
+    <string name="notifications_disabled">Notifications are disabled</string>
+    <string name="enable">Enable</string>
+    <string name="conference_requires_password">Conference requires password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="missing_presence_updates">Missing presence updates from contact</string>
+    <string name="request_presence_updates">Please request presence updates from your contact first.\n\n<small>This will be used to determine what client(s) your contact is using.</small></string>
+    <string name="request_now">Request now</string>
+    <string name="delete_fingerprint">Delete Fingerprint</string>
+    <string name="sure_delete_fingerprint">Are you sure you would like to delete this fingerprint?</string>
+    <string name="ignore">Ignore</string>
+    <string name="without_mutual_presence_updates"><b>Warning:</b> Sending this without mutual presence updates could cause unexpected problems.\n\n<small>Go to contact details to verify your presence subscriptions.</small></string>
+    <string name="pref_encryption_settings">Encryption settings</string>
+    <string name="pref_force_encryption">Force end-to-end encryption</string>
+    <string name="pref_force_encryption_summary">Always send messages encrypted (except for conferences)</string>
+    <string name="pref_dont_save_encrypted">Don’t save encrypted messages</string>
+    <string name="pref_dont_save_encrypted_summary">Warning: This could lead to message loss</string>
+    <string name="pref_expert_options">Expert options</string>
+    <string name="pref_expert_options_summary">Please be careful with these</string>
+    <string name="title_activity_about">About Conversations</string>
+    <string name="pref_about_conversations_summary">Build and licensing information</string>
+    <string name="pref_about_message" translatable="false">            Conversations • the very last word in instant messaging.
+            \n\nCopyright © 2014 Daniel Gultsch
+            \n\nThis program is free software: you can redistribute it and/or modify
+            it under the terms of the GNU General Public License as published by
+            the Free Software Foundation, either version 3 of the License, or
+            (at your option) any later version.
+            \n\nThis program is distributed in the hope that it will be useful,
+            but WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+            GNU General Public License for more details.
+            \n\nYou should have received a copy of the GNU General Public License
+            along with this program. If not, see https://www.gnu.org/licenses
+            \n\nDownload the full source code at https://github.com/siacs/Conversations
+            \n\n\nLibraries
+            \n\nhttps://www.bouncycastle.org\n(The MIT License (MIT))
+            \n\nhttps://www.gnu.org/software/libidn\n(Apache License, Version 2.0)
+            \n\nhttps://github.com/ge0rg/MemorizingTrustManager\n(The MIT License (MIT))
+            \n\nhttps://github.com/rtreffer/minidns\n(WTFPL)
+            \n\nhttps://github.com/open-keychain/openkeychain-api-lib\n(Apache License, Version 2.0)
+            \n\nhttps://github.com/jitsi/otr4j\n(LGPL-3.0)
+            \n\nhttps://developer.android.com/tools/support-library\n(Apache License, Version 2.0)
+            \n\nhttps://github.com/zxing/zxing\n(Apache License, Version 2.0)</string>
+    <string name="title_pref_quiet_hours">Quiet Hours</string>
+    <string name="title_pref_quiet_hours_start_time">Start time</string>
+    <string name="title_pref_quiet_hours_end_time">End time</string>
+    <string name="title_pref_enable_quiet_hours">Enable quiet hours</string>
+    <string name="pref_quiet_hours_summary">Notifications will be silenced during quiet hours</string>
+    <string name="pref_use_larger_font">Increase font size</string>
+    <string name="pref_use_larger_font_summary">Use larger font sizes across the entire app</string>
+    <string name="pref_use_send_button_to_indicate_status">Send button indicates status</string>
+    <string name="pref_use_indicate_received">Request message receipts</string>
+    <string name="pref_use_indicate_received_summary">Received messages will be marked with a green tick if supported</string>
+    <string name="pref_use_send_button_to_indicate_status_summary">Colorize send button to indicate contact status</string>
+    <string name="pref_expert_options_other">Other</string>
+    <string name="pref_conference_name">Conference name</string>
+    <string name="pref_conference_name_summary">Use room’s subject instead of JID to identify conferences</string>
+    <string name="toast_message_otr_fingerprint">OTR fingerprint copied to clipboard!</string>
+    <string name="conference_banned">You are banned from this conference</string>
+    <string name="conference_members_only">This conference is members only</string>
+    <string name="conference_kicked">You have been kicked from this conference</string>
+    <string name="using_account">using account %s</string>
+    <string name="checking_image">Checking image on HTTP host</string>
+    <string name="image_file_deleted">The image file has been deleted</string>
+    <string name="not_connected_try_again">You are not connected. Try again later</string>
+    <string name="check_image_filesize">Check image file size</string>
+    <string name="message_options">Message options</string>
+    <string name="copy_text">Copy text</string>
+    <string name="copy_original_url">Copy original URL</string>
+    <string name="send_again">Send again</string>
+    <string name="image_url">Image URL</string>
+    <string name="message_text">Message text</string>
+    <string name="url_copied_to_clipboard">URL copied to clipboard</string>
+    <string name="message_copied_to_clipboard">Message copied to clipboard</string>
+    <string name="image_transmission_failed">Image transmission failed</string>
+    <string name="scan_qr_code">Scan QR code</string>
+    <string name="show_qr_code">Show QR code</string>
+    <string name="show_block_list">Show block list</string>
+    <string name="account_details">Account details</string>
+    <string name="verify_otr">Verify OTR</string>
+    <string name="remote_fingerprint">Remote Fingerprint</string>
+    <string name="scan">scan</string>
+    <string name="or_touch_phones">(or touch phones)</string>
+    <string name="smp">Socialist Millionaire Protocol</string>
+    <string name="shared_secret_hint">Hint or Question</string>
+    <string name="shared_secret_secret">Shared Secret</string>
+    <string name="confirm">Confirm</string>
+    <string name="in_progress">In progress</string>
+    <string name="respond">Respond</string>
+    <string name="failed">Failed</string>
+    <string name="secrets_do_not_match">Secrets do not match</string>
+    <string name="try_again">Try again</string>
+    <string name="finish">Finish</string>
+    <string name="verified">Verified!</string>
+    <string name="smp_requested">Contact requested SMP verification</string>
+    <string name="no_otr_session_found">No valid OTR session has been found!</string>
+    <string name="conversations_foreground_service">Conversations</string>
+    <string name="pref_keep_foreground_service">Keep service in foreground</string>
+    <string name="pref_keep_foreground_service_summary">Prevents the operating system from killing your connection</string>
+    <string name="choose_file">Choose file</string>
+    <string name="receiving_x_file">Receiving %1$s (%2$d%% completed)</string>
+    <string name="download_x_file">Download %s</string>
+    <string name="file">file</string>
+    <string name="open_x_file">Open %s</string>
+    <string name="sending_file">sending (%1$d%% completed)</string>
+    <string name="preparing_file">Preparing file for transmission</string>
+    <string name="x_file_offered_for_download">%s offered for download</string>
+    <string name="cancel_transmission">Cancel transmission</string>
+    <string name="file_transmission_failed">file transmission failed</string>
+    <string name="file_deleted">The file has been deleted</string>
+    <string name="no_application_found_to_open_file">No application found to open file</string>
+    <string name="could_not_verify_fingerprint">Could not verify fingerprint</string>
+    <string name="manually_verify">Manually verify</string>
+    <string name="are_you_sure_verify_fingerprint">Are you sure that you want to verify your contacts OTR fingerprint?</string>
+    <string name="pref_show_dynamic_tags">Show dynamic tags</string>
+    <string name="pref_show_dynamic_tags_summary">Display read-only tags underneath contacts</string>
+    <string name="enable_notifications">Enable notifications</string>
+    <string name="conference_with">Create conference with…</string>
+    <string name="no_conference_server_found">No conference server found</string>
+    <string name="conference_creation_failed">Conference creation failed!</string>
+    <string name="conference_created">Conference created!</string>
+    <string name="secret_accepted">Secret accepted!</string>
+    <string name="reset">Reset</string>
+    <string name="account_image_description">Account avatar</string>
+    <string name="copy_otr_clipboard_description">Copy OTR fingerprint to clipboard</string>
+    <string name="fetching_history_from_server">Fetching history from server</string>
+    <string name="no_more_history_on_server">No more history on server</string>
+    <string name="updating">Updating…</string>
+    <string name="password_changed">Password changed!</string>
+    <string name="could_not_change_password">Could not change password</string>
+    <string name="otr_session_not_started">Send a message to start an encrypted chat</string>
+    <string name="ask_question">Ask question</string>
+    <string name="smp_explain_question">If you and your contact have a secret in common that no one else knows (like an inside joke or simply what you had for lunch the last time you met) you can use that secret to verify each other\'s fingerprints.\n\nYou provide a hint or a question for your contact who will respond with a case-sensitive answer.</string>
+    <string name="smp_explain_answer">Your contact would like to verify your fingerprint by challenging you with a shared secret. Your contact provided the following hint or question for that secret.</string>
+    <string name="shared_secret_hint_should_not_be_empty">Your hint should not be empty</string>
+    <string name="shared_secret_can_not_be_empty">Your shared secret can not be empty</string>
+    <string name="manual_verification_explanation">Carefully compare the fingerprint shown below with the fingerprint of your contact.\nYou can use any trusted form of communication like an encrypted e-mail or a telephone call to exchange those.</string>
+    <string name="change_password">Change password</string>
+    <string name="current_password">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="password_should_not_be_empty">Password should not be empty</string>
+    <string name="enable_all_accounts">Enable all accounts</string>
+    <string name="disable_all_accounts">Disable all accounts</string>
+    <string name="perform_action_with">Perform action with</string>
+    <string name="no_affiliation">No affiliation</string>
+    <string name="no_role">No role</string>
+    <string name="outcast">Outcast</string>
+    <string name="member">Member</string>
+    <string name="advanced_mode">Advanced mode</string>
+    <string name="grant_membership">Grant membership</string>
+    <string name="remove_membership">Revoke membership</string>
+    <string name="grant_admin_privileges">Grant admin privileges</string>
+    <string name="remove_admin_privileges">Revoke admin privileges</string>
+    <string name="remove_from_room">Remove from conference</string>
+    <string name="could_not_change_affiliation">Could not change affiliation of %s</string>
+    <string name="ban_from_conference">Ban from conference</string>
+    <string name="removing_from_public_conference">You are trying to remove %s from a public conference. The only way to do that is to ban that user for ever.</string>
+    <string name="ban_now">Ban now</string>
+    <string name="could_not_change_role">Could not change role of %s</string>
+    <string name="public_conference">Publicly accessible conference</string>
+    <string name="private_conference">Private, members only conference</string>
+    <string name="conference_options">Conference options</string>
+    <string name="members_only">Private (Members only)</string>
+    <string name="non_anonymous">Non-anonymous</string>
+    <string name="modified_conference_options">Modified conference options!</string>
+    <string name="could_not_modify_conference_options">Could not modify conference options</string>
+    <string name="never">Never</string>
+    <string name="thirty_minutes">30 minutes</string>
+    <string name="one_hour">1 hour</string>
+    <string name="two_hours">2 hours</string>
+    <string name="eight_hours">8 hours</string>
+    <string name="until_further_notice">Until further notice</string>
+    <string name="pref_input_options">Input options</string>
+    <string name="pref_enter_is_send">Enter is send</string>
+    <string name="pref_enter_is_send_summary">Use enter key to send message</string>
+    <string name="pref_display_enter_key">Show enter key</string>
+    <string name="pref_display_enter_key_summary">Change the emoticons key to an enter key</string>
+    <string name="audio">audio</string>
+    <string name="video">video</string>
+    <string name="image">image</string>
+    <string name="pdf_document">PDF document</string>
+    <string name="apk">Android App</string>
+    <string name="vcard">Contact</string>
+    <string name="received_x_file">Received %s</string>
+    <string name="disable_foreground_service">Disable foreground service</string>
+    <string name="touch_to_open_conversations">Touch to open Conversations</string>
+    <string name="avatar_has_been_published">Avatar has been published!</string>
+    <string name="sending_x_file">Sending %s</string>
+    <string name="offering_x_file">Offering %s</string>
+    <string name="hide_offline">Hide offline</string>
+    <string name="title_activity_conversation">Conversations</string>
+    <string name="title_activity_verify_otr">VerifyOTRActivity</string>
+    <string name="title_activity_abstract_searchable_list_item">AbstractSearchableListItemActivity</string>
+    <string name="title_activity_manage_account">Manage account</string>
+    <string name="title_activity_publish_profile_picture">Publish profile picture</string>
+    <string name="title_activity_change_password">Change password on server</string>
+    <string name="title_activity_parent_home">Home</string>
+    <string name="title_activity_group_conversation">Group Conversation</string>
+
+</resources>

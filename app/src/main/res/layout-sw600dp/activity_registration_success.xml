@@ -1,0 +1,196 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.ptapp.activity.RegistrationSuccessActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+             is needed to present your content, e.g. VideoView, SurfaceView,
+             TextureView, etc. -->
+
+
+    <ListView
+        android:id="@+id/kids_list"
+        android:layout_width="410dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="100dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/user_info_section"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="100dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_person"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/student"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription=""
+            android:scaleType="fitCenter" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/theme_primary_light"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/tv_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Class"
+                android:textColor="@color/theme_primary_light"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/tv_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="School Name"
+                android:textColor="@color/theme_primary_light"
+                android:textSize="@dimen/text_size_large" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="400dp">
+
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_primary_light"
+            android:textSize="@dimen/text_size_large"
+            android:paddingBottom="20dp" />
+
+        <TextView
+            android:id="@+id/tv_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text3"
+            android:textColor="@color/theme_primary_light"
+            android:textSize="@dimen/text_size_large" />
+
+        <LinearLayout
+            android:id="@+id/tos_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="120dp">
+
+            <CheckBox
+                android:id="@+id/i_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/i_agree"
+                android:textColor="@color/body_text_3"
+                android:textSize="@dimen/text_size_large"
+                android:paddingRight="6dp" />
+
+            <TextView
+                android:id="@+id/tos_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tosLink"
+                android:textSize="@dimen/text_size_large"
+                android:autoLink="web"
+                android:clickable="true"
+                android:onClick="onClickTosLink"
+                android:textColor="@color/theme_accent_1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_row"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="60dp"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_height="80dp"
+                android:background="@color/theme_primary"
+                android:layout_width="80dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="80dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no_btn"
+                    android:background="?photoItemForeground"
+                    android:textColor="#8fff"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textStyle="@integer/font_textStyle_medium"
+                    android:fontFamily="@string/font_fontFamily_medium"
+                    android:textAllCaps="true"
+                    android:onClick="onClickNo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="80dp"
+                android:background="@color/theme_primary"
+                android:layout_width="80dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes_btn"
+                    android:background="?photoItemForeground"
+                    android:textColor="#8fff"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textStyle="@integer/font_textStyle_medium"
+                    android:fontFamily="@string/font_fontFamily_medium"
+                    android:textAllCaps="true"
+                    android:onClick="onClickYes" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/show_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_primary_light"
+            android:textSize="@dimen/text_size_xlarge"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

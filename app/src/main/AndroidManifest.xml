@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ptapp.app"
+    android:versionCode="1"
+    android:versionName="1.0" > <!-- GCM requires Android SDK version 2.2 (API level 8) or above. -->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="L" />
+    <!--
+         The targetSdkVersion is optional, but it's always a good practice
+         to target higher versions.
+    -->
+
+
+    <!-- to write to SD-Card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Calendar Permissions -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <!-- GCM requires Android SDK version 2.2 (API level 8) or above. -->
+    <!-- required for GCM -->
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!--
+     Creates a custom permission so only this app can receive its messages.
+
+     NOTE: the permission *must* be called PACKAGE.permission.C2D_MESSAGE,
+           where PACKAGE is the application's package name.
+    -->
+    <permission
+        android:name="com.ptapp.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.schoolo.app.permission.C2D_MESSAGE" />
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Calling a Number -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:name="com.ptapp.app.SchooloApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/schoolo"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Schoolo" >
+
+        <!-- Required for applications which use Google Play Services. -->
+        <!--
+            <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+
+        <service android:name="com.ptapp.service.XmppConnectionService" />
+
+        <receiver android:name="com.ptapp.service.EventReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+        <!-- TODO:Remove the sliding pane and fix the navigation, and create the parent side basic screens -->
+        <activity
+            android:name="com.ptapp.activity.ConversationActivity"
+            android:label="@string/title_activity_conversation"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.ptapp.activity.EducatorHomeActivity"
+            android:label="@string/title_activity_home_educator"
+            android:screenOrientation="portrait" />
+
+        <!-- 'noHistory' true, means remove the activity from the history stack (on back button) -->
+        <!--
+            <activity
+            android:name="com.schoolo.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name="com.ptapp.activity.HomeActivity"
+            android:label="@string/page_home"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.ptapp.activity.ChildProfileActivity"
+            android:label="@string/page_child_profile"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.ptapp.activity.EventsMonthlyActivity"
+            android:label="@string/monthly_events"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ptapp.activity.EventDetailActivity"
+            android:label="@string/event_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ptapp.activity.SliderImageActivity"
+            android:label="@string/page_view_image"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ptapp.activity.AudioPlayerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme" />
+        <activity
+            android:name="com.ptapp.activity.SettingsActivity"
+            android:label="SettingsActivity"
+            android:screenOrientation="portrait" />
+
+        <!--
+          WakefulBroadcastReceiver that will receive intents from GCM
+          services and hand them to the custom IntentService.
+
+          The com.google.android.c2dm.permission.SEND permission is necessary
+          so only GCM services can send data messages for the app.
+        -->
+        <receiver
+            android:name="com.ptapp.app.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- with the category set as applicationPackage. -->
+                <category android:name="com.ptapp.app" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+          Application-specific subclass of GCMBaseIntentService that will
+          handle received messages.
+
+          By default, it must be named .GCMIntentService, unless the
+          application uses a custom BroadcastReceiver that redefines its name.
+        -->
+        <service android:name="com.ptapp.app.GCMIntentService" />
+
+        <provider
+            android:name="com.ptapp.provider.PTAppProvider"
+            android:authorities="com.ptapp.app"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:syncable="false" />
+
+        <activity
+            android:name="com.ptapp.activity.AgreeTosActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_agree_tos"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Schoolo.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ptapp.activity.VerifyPhoneActivity"
+            android:label="@string/title_activity_verify_phone"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Schoolo.Fullscreen" />
+        <activity
+            android:name="com.ptapp.activity.OTPActivity"
+            android:label="@string/welcome_text"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Schoolo.Default" />
+        <activity
+            android:name="com.ptapp.activity.RegistrationSuccessActivity"
+            android:label="@string/welcome_text"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Schoolo.Default" />
+        <activity
+            android:name="com.ptapp.activity.OpenTosActivity"
+            android:label="@string/title_activity_open_tos"
+            android:screenOrientation="portrait" >
+
+            <!--
+                <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ptapp.activity.AgreeTosActivity" />
+            -->
+        </activity>
+
+        <activity
+            android:name="com.ptapp.activity.EducatorGroupMsgActivity"
+            android:label="@string/title_activity_educator_group_msg"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Schoolo.Default" />
+        <activity
+            android:name="com.ptapp.activity.EducatorMsgsActivity"
+            android:label="@string/title_activity_educator_msgs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ptapp.activity.EducatorEventsActivity"
+            android:label="@string/title_activity_educator_events"
+            android:parentActivityName="com.ptapp.activity.EducatorHomeActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ptapp.activity.EducatorHomeActivity" />
+        </activity>
+        <activity
+            android:name="com.ptapp.activity.ParentHomeActivity"
+            android:label="@string/title_activity_parent_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ptapp.GroupConversationActivity"
+            android:label="@string/title_activity_group_conversation" >
+        </activity>
+    </application>
+
+</manifest>

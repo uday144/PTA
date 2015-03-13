@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/complete_msg"
+        android:layout_width="@dimen/list_item_msg_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:background="@drawable/rounded_box">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|left">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="F"
+                android:textSize="@dimen/text_size_large"
+                android:background="@color/theme_primary"
+                android:textColor="@color/navdrawer_background"
+                android:gravity="center"
+                android:layout_marginRight="1dp" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="M"
+                android:textSize="@dimen/text_size_large"
+                android:background="@color/theme_primary"
+                android:textColor="@color/navdrawer_background"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="@color/gray_background">
+
+            <TextView
+                android:id="@+id/msg_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/body_text_3"
+                android:textSize="@dimen/list_item_msg_text_size"
+                android:layout_toLeftOf="@+id/tick_time"
+                android:paddingRight="10dp" />
+
+
+            <!--Ack,time and tick-->
+            <LinearLayout
+                android:id="@+id/tick_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom|left"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/iv_tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/double_tick" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/body_text_3"
+                    android:textSize="@dimen/list_item_msg_text_size"
+                    android:text="7:05 AM" />
+
+                <!--Ack and count-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="bottom">
+
+                    <ImageView
+                        android:id="@+id/iv_ack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ack"
+                        android:paddingRight="4dp" />
+
+                    <TextView
+                        android:id="@+id/tv_ack_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/body_text_3"
+                        android:textSize="@dimen/list_item_msg_text_size"
+                        android:text="22" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

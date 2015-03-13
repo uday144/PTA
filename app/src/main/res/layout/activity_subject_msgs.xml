@@ -1,0 +1,301 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".LoginActivity">
+
+    <!-- Clickable title -->
+    <LinearLayout
+        android:id="@+id/collapse_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:onClick="onClickToggleDemographics"
+        android:layout_alignParentTop="true">
+        <!-- Educator Name -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".90"
+            android:layout_gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Name: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_upDown"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight=".10"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_demographics"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/collapse_header">
+
+
+        <!-- Educator Email -->
+
+        <LinearLayout
+            android:id="@+id/ll_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_email_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <!-- Educator Phone -->
+
+        <LinearLayout
+            android:id="@+id/ll_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_phone_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <!-- Educator Type -->
+
+        <LinearLayout
+            android:id="@+id/ll_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_type_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dummy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_phone_dummy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_phone_value_dummy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dummy3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_phone_dummy3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone3: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_phone_value_dummy3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dummy4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_phone_dummy4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone4: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_phone_value_dummy4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dummy5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_phone_dummy5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone5: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_phone_value_dummy5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dummy6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_phone_dummy6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone6: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_phone_value_dummy6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dummy7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_phone_dummy7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone7: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_phone_value_dummy7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_dummy8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_phone_dummy8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone8: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_phone_value_dummy8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:layout_below="@+id/ll_demographics"
+        android:layout_above="@+id/rl_typeSend">
+
+
+        <!--<ScrollView
+            android:id="@+id/sv_chat"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#c2c2c2" >
+        </ScrollView>-->
+        <RelativeLayout
+            android:id="@+id/fl_calEvents"
+            style="@style/bxEvents"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/tv_no_events"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <ListView
+                android:id="@+id/listV_main"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@color/OrangeRed" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_typeSend"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/et_txt_Msg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".90"
+                android:hint="" />
+
+            <ImageButton
+                android:id="@+id/ib_send"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="onClickSendChat"
+                android:src="@drawable/ic_launcher"
+                android:layout_weight=".10" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

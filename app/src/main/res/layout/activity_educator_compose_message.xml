@@ -1,0 +1,62 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main layout -->
+    <com.ptapp.widget.DrawShadowFrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        app:shadowDrawable="@drawable/header_shadow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ll_To"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_To"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="To"
+                    android:layout_toLeftOf="@+id/groups_spinner" />
+
+                <Spinner
+                    android:id="@+id/groups_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:hint="Type message here" />
+
+            <Button
+                android:id="@+id/btn_sendNewMsg"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Send" />
+
+        </LinearLayout>
+
+    </com.ptapp.widget.DrawShadowFrameLayout>
+
+    <!-- Nav drawer -->
+    <include layout="@layout/navdrawer_for_ab_overlay" />
+
+</android.support.v4.widget.DrawerLayout>

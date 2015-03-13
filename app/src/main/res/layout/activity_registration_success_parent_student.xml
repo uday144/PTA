@@ -1,0 +1,242 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.ptapp.activity.RegistrationSuccessParentStudent">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+             is needed to present your content, e.g. VideoView, SurfaceView,
+             TextureView, etc. -->
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+        <!--Options-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".20"
+                android:textColor="@color/theme_primary"
+                android:text="@string/ima"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_marginRight="10dp" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".80"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/parent_option"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:text="@string/parent"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <RadioButton
+                    android:id="@+id/teacher_option"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:text="@string/teacher"
+                    android:textSize="@dimen/text_size_medium" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Ward Info-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".30"
+                android:src="@drawable/student" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".70"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/student_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_medium"
+                    android:hint="@string/hint_student_name" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_medium"
+                    android:text="@string/set_student_pic_text"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Line-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/YellowGreen"
+            android:layout_marginTop="20dp"></View>
+
+        <!--Parent details section-->
+        <LinearLayout
+            android:id="@+id/parent_details_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_medium"
+                android:text="@string/text7" />
+
+            <!--Parents Info-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".30"
+                    android:src="@drawable/parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".70"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Spinner
+                            android:id="@+id/spin_title"
+                            android:layout_width="0dp"
+                            android:layout_weight=".30"
+                            android:layout_height="wrap_content"></Spinner>
+
+                        <EditText
+                            android:id="@+id/parent_fname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".70"
+                            android:textSize="@dimen/text_size_medium"
+                            android:hint="@string/hint_firstname" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/parent_lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_lastname"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <!--Father or Mother-->
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <RadioButton
+                            android:id="@+id/father_option"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".50"
+                            android:text="@string/father"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <RadioButton
+                            android:id="@+id/mother_option"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".50"
+                            android:text="@string/mother"
+                            android:textSize="@dimen/text_size_medium" />
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--TODO:Find another better way to display checkbox with msg and TOS link text together-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/i_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_tos"
+                android:textColor="@color/body_text_3"
+                android:textSize="@dimen/text_size_medium"
+                android:paddingRight="6dp" />
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tosLink"
+            android:textSize="@dimen/text_size_medium"
+            android:clickable="true"
+            android:onClick="onClickTosLink"
+            android:textColor="@color/theme_accent_1"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="32dp" />
+
+        <LinearLayout
+            android:layout_height="44dp"
+            android:background="@color/theme_primary"
+            android:layout_width="220dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/continue_btn_text"
+                android:background="?photoItemForeground"
+                android:textColor="#8fff"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="@integer/font_textStyle_medium"
+                android:fontFamily="@string/font_fontFamily_medium"
+                android:textAllCaps="true"
+                android:onClick="onClickNo" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

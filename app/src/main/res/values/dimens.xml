@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Conversations app start-->
+    <dimen name="infocard_padding">16dp</dimen>
+    <dimen name="conversations_overview_width">288dp</dimen>
+    <!--Conversations app end-->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Action Bar auto-hide-on-scroll behavior parameters -->
+    <dimen name="action_bar_auto_hide_min_y">152dp</dimen>
+    <dimen name="action_bar_auto_hide_sensivity">48dp</dimen>
+
+    <!-- body content -->
+    <dimen name="text_size_xsmall">11sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">20sp</dimen>
+
+
+    <dimen name="text_size_diff_large_small">6sp</dimen>
+
+    <!-- navigation drawer -->
+    <dimen name="navdrawer_chosen_account_height">140dp</dimen>
+    <dimen name="navdrawer_width">260dp</dimen>
+    <dimen name="navdrawer_profile_image_size">40dp</dimen>
+    <dimen name="keyline_1">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <!--Educator Homepage-->
+    <dimen name="explore_grid_padding">4dp</dimen>
+    <dimen name="explore_hero_item_height">240dp</dimen>
+    <dimen name="half_explore_grid_padding">2dp</dimen>
+    <!--Spinner-->
+    <dimen name="explore_dropdown_item_height">48dp</dimen>
+    <dimen name="tag_color_dot_size">12dp</dimen>
+    <dimen name="explore_spinner_width">200dp</dimen>
+    <dimen name="spinner_left_padding">4dp</dimen>
+
+    <!--Edu group msg activity-->
+    <dimen name="list_item_msg_width">260dp</dimen>
+    <dimen name="list_item_msg_text_size">@dimen/text_size_medium</dimen>
+    <dimen name="list_item_msg_margin_bottom">40dp</dimen>
+    <dimen name="list_item_single_msg_margin_bottom">20dp</dimen>
+
+    <!--Educator Action bar-->
+    <dimen name="abar_events_frame_padding_top">4dp</dimen>
+    <dimen name="abar_events_num_text_size">@dimen/text_size_xsmall</dimen>
+</resources>

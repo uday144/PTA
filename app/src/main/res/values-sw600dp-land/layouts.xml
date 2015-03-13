@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="list_item_session_hero" type="layout">@layout/list_item_session_hero_wide</item>
+</resources>

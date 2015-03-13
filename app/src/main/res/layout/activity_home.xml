@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    tools:context=".LoginActivity" >
+
+    <FrameLayout
+        android:id="@+id/fl_kidsPicture"
+        style="@style/bxKidPic"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="7dp" >
+
+        <com.ptapp.utils.SquaredImageView
+            android:id="@+id/kid_picHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onClickKidPic" />
+
+        <ImageView
+            android:id="@+id/icon_cam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:contentDescription="@string/desc_cam"
+            android:onClick="onClickCamera"
+            android:src="@drawable/slrcamera" />
+
+        <ImageView
+            android:id="@+id/icon_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:contentDescription="@string/desc_people"
+            android:src="@drawable/icon_people" />
+
+        <ImageView
+            android:id="@+id/icon_bell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:contentDescription="@string/desc_bell"
+            android:onClick="onClickKidPic"
+            android:src="@drawable/icon_bell" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_msgBox"
+        style="@style/bxMsg"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/fl_kidsPicture"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:minHeight="80dp"
+            android:text="Message Box" >
+        </TextView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/fl_calEvents"
+        style="@style/bxEvents"
+        android:layout_height="126dp"
+        android:layout_below="@+id/fl_msgBox"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:onClick="onClickCalendarBox"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_no_events"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <ListView
+            android:id="@+id/listV_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@color/OrangeRed" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_gallery"
+        style="@style/bxGallery"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom" >
+
+        <FrameLayout
+            android:id="@+id/fl_ImgSlider"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_subjects"
+        style="@style/bxSubjects"
+        android:layout_above="@+id/fl_calEvents"
+        android:layout_toEndOf="@+id/fl_kidsPicture"
+        android:layout_toRightOf="@+id/fl_kidsPicture" >
+
+        <!-- gridview -->
+
+        <GridView
+            android:id="@+id/gv_Educators"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@null"
+            android:numColumns="@integer/column_count"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="none" >
+        </GridView>
+    </RelativeLayout>
+
+</RelativeLayout>

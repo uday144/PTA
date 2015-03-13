@@ -1,0 +1,70 @@
+<!--
+  Copyright 2014 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/actionbar_edu_img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:layout_gravity="center_vertical|left" />
+
+    <TextView
+        android:id="@+id/ab_online"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/actionbar_edu_img"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/White"
+        android:textStyle="bold" />
+    <!--<Spinner
+        style="@style/Widget.Schoolo.HeaderBar.Spinner"
+        android:id="@+id/actionbar_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />-->
+
+    <FrameLayout
+        android:id="@+id/actionbar_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingTop="@dimen/abar_events_frame_padding_top"
+        android:paddingRight="4dp">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:scaleType="center"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/calendar"
+            android:layout_marginLeft="12dp" />
+
+        <!--This text will represent the num of events in next 7 days-->
+        <TextView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:textSize="@dimen/abar_events_num_text_size"
+            android:text="10"
+            android:gravity="center"
+            android:textColor="@color/navdrawer_background"
+            android:background="@drawable/colored_circle" />
+    </FrameLayout>
+</RelativeLayout>

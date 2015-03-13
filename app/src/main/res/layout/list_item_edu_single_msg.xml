@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <FrameLayout
+        android:id="@+id/complete_msg"
+        android:layout_width="@dimen/list_item_msg_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/rounded_box"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="4dp"
+            android:background="@color/gray_background">
+
+            <TextView
+                android:id="@+id/msg_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/body_text_3"
+                android:textSize="@dimen/list_item_msg_text_size" />
+
+
+            <!--Ack,time and tick-->
+            <LinearLayout
+                android:id="@+id/tick_time"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/iv_tick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/double_tick" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/body_text_3"
+                    android:textSize="@dimen/list_item_msg_text_size"
+                    android:text="7:05 AM" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/label_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_box2">
+
+        <ImageView
+            android:id="@+id/moms_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anita (Adi's M)"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/navdrawer_background"/>
+    </LinearLayout>
+</FrameLayout>

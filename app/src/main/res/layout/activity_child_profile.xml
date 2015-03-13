@@ -1,0 +1,1088 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/first_option"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <!-- Clickable title -->
+
+        <TextView
+            android:id="@+id/txt_expand_demographics"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClickToggleDemographics"
+            android:text="Personal Information"
+            android:textColor="#3FB0D1"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <!-- content to hide/show -->
+
+        <LinearLayout
+            android:id="@+id/ll_demographics"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="0dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight=".70"
+                android:orientation="vertical">
+
+                <!-- Class -->
+
+                <LinearLayout
+                    android:id="@+id/ll_class"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_class_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <!-- Child Name -->
+
+                <LinearLayout
+                    android:id="@+id/ll_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_name_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <!-- Child RollNo -->
+
+                <LinearLayout
+                    android:id="@+id/ll_rollNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_rollNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll Number: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_rollNo_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <!-- Gender -->
+
+                <LinearLayout
+                    android:id="@+id/ll_gender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_gender_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <!-- Child DoB -->
+
+                <LinearLayout
+                    android:id="@+id/ll_dob"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date Of Birth: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_dob_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_kidPic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight=".30"
+                android:background="#e2e2e2"
+                android:orientation="vertical">
+
+                <com.ptapp.utils.SquaredImageView
+                    android:id="@+id/kid_picProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Child Hobbies -->
+
+        <LinearLayout
+            android:id="@+id/ll_hobbies"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_hobbies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hobbies: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_hobbies_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <!-- Child Email -->
+
+        <LinearLayout
+            android:id="@+id/ll_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_email_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+        <!-- Child Address -->
+
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: "></TextView>
+
+            <TextView
+                android:id="@+id/txt_address_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <!-- Clickable title - Parents Information -->
+
+        <TextView
+            android:id="@+id/txt_expand_Second"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClickToggleSecond"
+            android:text="Parents Information"
+            android:textColor="#3FB0D1"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <!-- content to hide/show -->
+
+        <LinearLayout
+            android:id="@+id/ll_second"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="0dp">
+
+            <!-- Child Father name -->
+
+            <LinearLayout
+                android:id="@+id/ll_fName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_fName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Father&apos;s Name: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_fName_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Child Father mobile -->
+
+            <LinearLayout
+                android:id="@+id/ll_fMobile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_fMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Father&apos;s Mobile Number: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_fMobile_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Child Father email -->
+
+            <LinearLayout
+                android:id="@+id/ll_fEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_fEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Father&apos;s Email: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_fEmail_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Child Father photo -->
+
+            <LinearLayout
+                android:id="@+id/ll_fPhoto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_fPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Father&apos;s Photo: "></TextView>
+
+                <com.ptapp.utils.SquaredImageView
+                    android:id="@+id/picFather"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" />
+            </LinearLayout>
+
+            <!-- Child Mother name -->
+
+            <LinearLayout
+                android:id="@+id/ll_mName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_mName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mother&apos;s Name: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_mName_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Child Mother mobile -->
+
+            <LinearLayout
+                android:id="@+id/ll_mMobile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_mMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mother&apos;s Mobile Number: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_mMobile_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Child Mother email -->
+
+            <LinearLayout
+                android:id="@+id/ll_mEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_mEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mother&apos;s Email: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_mEmail_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Child Mother photo -->
+
+            <LinearLayout
+                android:id="@+id/ll_mPhoto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_mPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mother&apos;s Photo: "></TextView>
+
+                <com.ptapp.utils.SquaredImageView
+                    android:id="@+id/picMother"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" />
+            </LinearLayout>
+
+            <!-- Gaurdian info is optional -->
+            <!-- Child Gaurdian name -->
+
+            <LinearLayout
+                android:id="@+id/ll_gName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_gName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gaurdian&apos;s Name: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_gName_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Child Gaurdian mobile -->
+
+            <LinearLayout
+                android:id="@+id/ll_gMobile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_gMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gaurdian&apos;s Mobile Number: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_gMobile_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Child Guardian email -->
+
+            <LinearLayout
+                android:id="@+id/ll_gEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_gEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guardian&apos;s Email: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_gEmail_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Child Gaurdian photo -->
+
+            <LinearLayout
+                android:id="@+id/ll_gPhoto"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/txt_gPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gaurdian&apos;s Photo: "></TextView>
+
+                <com.ptapp.utils.SquaredImageView
+                    android:id="@+id/picGuardian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Clickable title - Medical Information -->
+
+        <TextView
+            android:id="@+id/txt_expand_Third"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClickToggleThird"
+            android:text="Medical Information"
+            android:textColor="#3FB0D1"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <!-- content to hide/show -->
+
+        <LinearLayout
+            android:id="@+id/ll_third"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="0dp">
+
+            <!-- Child BloodGroup -->
+
+            <LinearLayout
+                android:id="@+id/ll_bloodGrp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_bloodGrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_bloodGrp_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Child Height -->
+
+            <LinearLayout
+                android:id="@+id/ll_height"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_height_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Child Weight -->
+
+            <LinearLayout
+                android:id="@+id/ll_weight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_weight_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Medical Problems -->
+
+            <LinearLayout
+                android:id="@+id/ll_medical_problems"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_medical_problems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medical Problems: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_medical_problems_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Medication needs -->
+
+            <LinearLayout
+                android:id="@+id/ll_medication_needs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_medication_needs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medication Needs: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_medication_needs_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Medical Allergies -->
+
+            <LinearLayout
+                android:id="@+id/ll_medication_allergies"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_medication_allergies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medication Allergies: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_medication_allergies_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Food Allergies -->
+
+            <LinearLayout
+                android:id="@+id/ll_food_allergies"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_food_allergies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food Allergies: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_food_allergies_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Other Allergies -->
+
+            <LinearLayout
+                android:id="@+id/ll_other_allergies"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_other_allergies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other Allergies: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_other_allergies_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Other Details -->
+
+            <LinearLayout
+                android:id="@+id/ll_special_dietary_needs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_special_dietary_needs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Dietary Needs: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_special_dietary_needs_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Child Physician Name -->
+
+            <LinearLayout
+                android:id="@+id/ll_PhysicianName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_physicianName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Physician Name: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_physicianName_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            <!-- Child Physician Phone -->
+
+            <LinearLayout
+                android:id="@+id/ll_physicianPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_physicianPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Physician Phone: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_physicianPhone_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Clickable title - Attendance Information -->
+
+        <TextView
+            android:id="@+id/txt_expand_attendance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClickToggleFourth"
+            android:text="Attendance Information"
+            android:textColor="#3FB0D1"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <!-- content to hide/show -->
+
+        <LinearLayout
+            android:id="@+id/ll_fourth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="0dp">
+
+            <!-- Date -->
+
+            <LinearLayout
+                android:id="@+id/ll_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_date_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Status -->
+
+            <LinearLayout
+                android:id="@+id/ll_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_status_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Clickable title - Fee Information -->
+
+        <TextView
+            android:id="@+id/txt_expand_fee"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClickToggleFifth"
+            android:text="Fee Details"
+            android:textColor="#3FB0D1"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <!-- content to hide/show -->
+
+        <LinearLayout
+            android:id="@+id/ll_fifth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="0dp">
+
+            <!-- Receipt Number -->
+
+            <LinearLayout
+                android:id="@+id/ll_receiptNo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_receiptNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receipt #: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_receiptNo_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Fee Cycle -->
+
+            <LinearLayout
+                android:id="@+id/ll_fee_cycle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_fee_cycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fee Cycle: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_fee_cycle_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Paid On -->
+
+            <LinearLayout
+                android:id="@+id/ll_paidOn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_paidOn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paid On: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_paidOn_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Amount -->
+
+            <LinearLayout
+                android:id="@+id/ll_amount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_amount_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Clickable title - Transport Information -->
+
+        <TextView
+            android:id="@+id/txt_transport"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClickToggleSixth"
+            android:text="Transport Information"
+            android:textColor="#3FB0D1"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <!-- content to hide/show -->
+
+        <LinearLayout
+            android:id="@+id/ll_sixth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="0dp">
+
+            <!-- Route Name -->
+
+            <LinearLayout
+                android:id="@+id/ll_route_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_route_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Route Name: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_route_name_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Stop Name -->
+
+            <LinearLayout
+                android:id="@+id/ll_stop_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_stop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stop Name: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_stop_name_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Zone Name -->
+
+            <LinearLayout
+                android:id="@+id/ll_zone_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_zone_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zone Name: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_zone_name_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Way -->
+
+            <LinearLayout
+                android:id="@+id/ll_way"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Way: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_way_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- SPOC number -->
+
+            <LinearLayout
+                android:id="@+id/ll_spoc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_spoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOC Phone Number: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_spoc_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Vehicle number -->
+
+            <LinearLayout
+                android:id="@+id/ll_vehicleNum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_vehicleNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Number: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_vehicleNum_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Driver name -->
+
+            <LinearLayout
+                android:id="@+id/ll_driverName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_driverName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Name: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_driverName_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Driver Phone -->
+
+            <LinearLayout
+                android:id="@+id/ll_driverPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_driverPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Phone: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_driverPhone_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                <ImageView
+                    android:id="@+id/phone_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickPhonePic"
+                    android:src="@drawable/phone" />
+
+                <ImageView
+                    android:id="@+id/sms_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClickSmsPic"
+                    android:src="@drawable/sms" />
+            </LinearLayout>
+
+            <!-- Conductor name -->
+
+            <LinearLayout
+                android:id="@+id/ll_conductorName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_conductorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Conductor Name: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_conductorName_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+            <!-- Conductor Phone -->
+
+            <LinearLayout
+                android:id="@+id/ll_conductorPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_conductorPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Conductor Phone: "></TextView>
+
+                <TextView
+                    android:id="@+id/txt_conductorPhone_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

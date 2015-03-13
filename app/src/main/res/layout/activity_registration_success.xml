@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.ptapp.activity.RegistrationSuccessActivity">
+
+    <ListView
+        android:id="@+id/kids_list"
+        android:layout_width="260dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:paddingTop="20dp"
+        android:fadeScrollbars="false" />
+
+    <LinearLayout
+        android:id="@+id/user_info_section"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_person"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/student"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription=""
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/body_text_2"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/tv_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Class"
+                android:textColor="@color/body_text_2"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/tv_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="School Name"
+                android:textColor="@color/body_text_2"
+                android:textSize="@dimen/text_size_medium" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/theme_primary_light"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_toLeftOf="@+id/no_button"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:id="@+id/no_button"
+                android:layout_height="48dp"
+                android:background="@color/theme_primary"
+                android:layout_width="48dp"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no_btn"
+                    android:background="?photoItemForeground"
+                    android:textColor="#8fff"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="@integer/font_textStyle_medium"
+                    android:fontFamily="@string/font_fontFamily_medium"
+                    android:textAllCaps="true"
+                    android:onClick="onClickNo"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text3"
+            android:textColor="@color/theme_primary_light"
+            android:textSize="@dimen/text_size_medium"
+            android:paddingTop="20dp" />
+
+        <LinearLayout
+            android:id="@+id/tos_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp">
+
+            <CheckBox
+                android:id="@+id/i_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/i_agree"
+                android:textColor="@color/body_text_3"
+                android:textSize="@dimen/text_size_medium"
+                android:paddingRight="3dp" />
+
+            <TextView
+                android:id="@+id/tos_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tosLink"
+                android:textSize="@dimen/text_size_medium"
+                android:autoLink="web"
+                android:clickable="true"
+                android:onClick="onClickTosLink"
+                android:textColor="@color/theme_accent_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:layout_gravity="center_horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/btn_continue"
+                android:layout_height="48dp"
+                android:background="@color/theme_primary"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/continue_btn_text"
+                    android:background="?photoItemForeground"
+                    android:textColor="#8fff"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="@integer/font_textStyle_medium"
+                    android:fontFamily="@string/font_fontFamily_medium"
+                    android:textAllCaps="false"
+                    android:onClick="onClickYes" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/show_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_primary_light"
+            android:textSize="@dimen/text_size_medium"
+            android:gravity="center" />
+    </LinearLayout>
+</RelativeLayout>

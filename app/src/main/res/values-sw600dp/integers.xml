@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="explore_1st_level_grid_columns">3</integer>
+    <integer name="explore_2nd_level_grid_columns">2</integer>
+
+    <!-- Number of grid columns spanned by the hero on wide layout.
+    Recommended: 1 less than explore_1st_level_grid_columns -->
+    <integer name="explore_wide_layout_hero_weight">2</integer>
+</resources>

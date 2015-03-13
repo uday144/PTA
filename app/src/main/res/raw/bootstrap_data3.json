@@ -1,0 +1,62 @@
+{
+"Address":[
+            {"AddressId":1,"Address1":"270, Phase 6","Address2":null,"Address3":null,"Address4":null,"CityCode":"MH","CityName":"Mohali","StateCode":"PB","StateName":"Punjab","CountryCode":"IN","CountryName":"India","CreatedTimeStamp":null,"ModifiedTimeStamp":null},
+            {"AddressId":2,"Address1":"Staff Colony, Phase6","Address2":null,"Address3":null,"Address4":null,"CityCode":"MH","CityName":"Mohali","StateCode":"PB","StateName":"Punjab","CountryCode":"IN","CountryName":"India","CreatedTimeStamp":null,"ModifiedTimeStamp":null},
+            {"AddressId":3,"Address1":"Parent Colony, Phase6","Address2":null,"Address3":null,"Address4":null,"CityCode":"MH","CityName":"Mohali","StateCode":"PB","StateName":"Punjab","CountryCode":"IN","CountryName":"India","CreatedTimeStamp":null,"ModifiedTimeStamp":null},
+            {"AddressId":4,"Address1":"Shivalik Hostel, Phase 6","Address2":null,"Address3":null,"Address4":null,"CityCode":"MH","CityName":"Mohali","StateCode":"PB","StateName":"Punjab","CountryCode":"IN","CountryName":"India","CreatedTimeStamp":null,"ModifiedTimeStamp":null}
+          ],
+"Institute":[
+                {"InstituteId":1,"Active":true,"CreatedTimeStamp":null,"Email":"info@shivalik.com","InstituteName":"Shivalik Public School","IsRegistered":true,"ModifiedTimeStamp":null,"Phone":"0172302302","CountryISOCode":"","Website":"www.shivalik.com","Address":null,"AddressId":1,"InstituteType":null,"InstituteTypeDescription":"School","InstituteTypeCode":"SCH"}
+            ],
+"Branch":[
+                {"BranchId":1,"BranchName":"Phase 6 Mohali","CreatedTimeStamp":null,"Email":"info@shivalik.com","ModifiedTimeStamp":null,"Phone":"0172302302","CountryISOCode":"","Address":null,"AddressId":1,"InstituteId":1}
+         ],
+"AcademicSession":[
+                    {"AcademicSessionId":1,"CreatedTimeStamp":null,"EndDate":"2015-03-31 00:00:00","ModifiedTimeStamp":null,"SessionDescription":"2014-15","SessionYear":"2014","StartDate":"2014-04-01 00:00:00","AcademicSessionTypeCode":"Yearly","AcademicSessionTypeDescription":"Full Year","AcademicSessionType":null}
+                  ],
+"Subject":[
+            {"SubjectId":1,"CreatedTimeStamp":null,"Description":"Punjabi","ModifiedTimeStamp":null,"SubjectCode":"PUN","Deleted":false},
+            {"SubjectId":2,"CreatedTimeStamp":null,"Description":"English","ModifiedTimeStamp":null,"SubjectCode":"ENG","Deleted":false}
+          ],
+"Class":[
+            {"ClassId":1,"CreatedTimeStamp":null,"ModifiedTimeStamp":null,"ClassType":null,"ClassTypeCode":"10th","ClassTypeDescription":"Matriculation Class","SectionType":null,"SectionTypeDescription":"First Section","SectionTypeCode":"A","AcademicSession":null,"AcademicSessionId":1,"AttendanceType":null,"AttendanceTypeCode":"Daily","AttendanceTypeDescription":"On Daily Basis","BranchId":1,"ClassTeacher":0},
+            {"ClassId":2,"CreatedTimeStamp":null,"ModifiedTimeStamp":null,"ClassType":null,"ClassTypeCode":"10th","ClassTypeDescription":"Matriculation Class","SectionType":null,"SectionTypeDescription":"Second Section","SectionTypeCode":"B","AcademicSession":null,"AcademicSessionId":1,"AttendanceType":null,"AttendanceTypeCode":"Daily","AttendanceTypeDescription":"On Daily Basis","BranchId":1,"ClassTeacher":0}
+        ],
+"ClassSubject":[
+                    {"ClassSubjectId":1,"CreatedTimeStamp":null,"ModifiedTimeStamp":null,"ClassId":1,"SubjectId":1},
+                    {"ClassSubjectId":2,"CreatedTimeStamp":null,"ModifiedTimeStamp":null,"ClassId":1,"SubjectId":2},
+                    {"ClassSubjectId":4,"CreatedTimeStamp":null,"ModifiedTimeStamp":null,"ClassId":2,"SubjectId":2}
+                ],
+"User":[
+            {"UserId":1,"Mobile":"9888330663","CountryISOCode":"IN","Registered":true,"Deleted":false},
+            {"UserId":2,"Mobile":"8288012419","CountryISOCode":"IN","Registered":false,"Deleted":false},
+            {"UserId":3,"Mobile":"9888330664","CountryISOCode":"IN","Registered":false,"Deleted":false},
+            {"UserId":4,"Mobile":"8729019648","CountryISOCode":"IN","Registered":false,"Deleted":false}
+        ],
+"Staff":[
+            {"StaffId":1,"ImageURL":"ImageURL","DisplayName":"Harpreet Singh","Email":"harpreet@shivalik.com","FirstName":"Harpreet","IsAdmin":false,"LastName":"Singh","Mobile":"8729019647","CountryISOCode":"IN","Password":"hello@123","AddressId":2,"QualificationLevel":"Masters","QualificationName":"M.A.","StaffTypeDescription":"Lecturer","StaffTypeCode":"LEC","BranchId":1,"UserId":3},
+            {"StaffId":2,"ImageURL":"ImageURL","DisplayName":"Singh, Birender","Email":"bir@shivalik.com","FirstName":"Birender","IsAdmin":true,"LastName":"Singh","Mobile":"8558814185","CountryISOCode":"IN","Password":"hello@123","AddressId":2,"QualificationLevel":"Masters","QualificationName":"M.A.","StaffTypeDescription":"Lecturer","StaffTypeCode":"LEC","BranchId":1,"UserId":1}
+        ],
+"StaffEngagement":[
+                    {"StaffEngagementId":1,"Active":true,"EndDate":"2015-03-31","StartDate":"2014-04-01","CreatedTimeStamp":null,"ModifiedBy":null,"StaffId":1,"ClassSubjectId":1},
+                    {"StaffEngagementId":3,"Active":true,"EndDate":"2015-03-31","StartDate":"2014-04-01","CreatedTimeStamp":null,"ModifiedBy":null,"StaffId":2,"ClassSubjectId":2},
+                    {"StaffEngagementId":4,"Active":true,"EndDate":"2015-03-31","StartDate":"2014-04-01","CreatedTimeStamp":null,"ModifiedBy":null,"StaffId":2,"ClassSubjectId":4}
+                  ],
+"Student":[
+            {"StudentId":1,"ImageURL":"imageURL","EnrollmentNo":"234","Allergies":"NO","dob":"1991-03-03","Email":"student1@gmail.com","FirstName":"Student1","Gender":"M","LastName":"","Mobile":"8729019648","CountryISOCode":"IN","SpecialInstructions":"NO","AddressId":4,"BranchId":1,"UserId":4,"Deleted":false},
+            {"StudentId":2,"ImageURL":"ImageURL","EnrollmentNo":"235","Allergies":"NO","dob":"1991-03-04","Email":"student2@gmail.com","FirstName":"Student2","Gender":"M","LastName":"","Mobile":"8729019649","CountryISOCode":"IN","SpecialInstructions":"NO","AddressId":4,"BranchId":1,"UserId":5,"Deleted":false}
+          ],
+"StudentAssociation":[
+                        {"StudentAssociationId":1,"YearlyResult":false,"StudentId":1,"ClassSubjectId":1,"Deleted":false},
+                        {"StudentAssociationId":2,"YearlyResult":false,"StudentId":1,"ClassSubjectId":2,"Deleted":false},
+                        {"StudentAssociationId":4,"YearlyResult":false,"StudentId":2,"ClassSubjectId":4,"Deleted":false}
+                    ],
+"Parent":[
+            {"ParentId":1,"Email":"bir@gmail.com","ImageURL":"imageURL","FirstName":"Birender","Gender":"M","LastName":"Singh","Mobile":"8558814185","CountryISOCode":"IN","Qualification":"1","QualificationLevel":null,"QualificationName":null,"CreatedTimeStamp":null,"ModifiedTimeStamp":null,"Address":null,"AddressId":3,"UserId":1,"Children":null},
+            {"ParentId":2,"Email":"jp@infosys.com","ImageURL":"ImageURL","FirstName":"JP","Gender":"M","LastName":"Singh","Mobile":"8288012419","CountryISOCode":"IN","Qualification":"1","QualificationLevel":null,"QualificationName":null,"CreatedTimeStamp":null,"ModifiedTimeStamp":null,"Address":null,"AddressId":3,"UserId":2,"Children":null}
+        ],
+"ParentChildRelation":[
+                        {"ParentChildRelationId":1,"ParentType":"F","StudentId":1,"ParentId":1},
+                        {"ParentChildRelationId":2,"ParentType":"F","StudentId":2,"ParentId":2}
+                    ]
+}

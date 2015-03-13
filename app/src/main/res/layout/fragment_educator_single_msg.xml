@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ptapp.activity.EducatorSingleMsgFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--Name bar-->
+        <LinearLayout
+            android:id="@+id/name_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:background="@color/navdrawer_background"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aarushi Nagpal"
+                android:textColor="@color/refresh_progress_1"
+                android:textStyle="bold"
+                android:textSize="@dimen/list_item_msg_text_size"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/msgs_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/list_item_single_msg_margin_bottom">
+
+            <ListView
+                android:id="@+id/list_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="10dp"
+                android:listSelector="@color/Transparent"
+                android:divider="@color/Transparent" />
+            <!--hides clickable effect-->
+        </FrameLayout>
+    </LinearLayout>
+    <!--Type and send bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/navdrawer_background"
+        android:layout_gravity="bottom">
+
+        <EditText
+            android:id="@+id/type_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/list_item_msg_text_size"
+            android:hint="@string/hint_type_msg"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:id="@+id/send_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_send_now" />
+    </LinearLayout>
+</FrameLayout>

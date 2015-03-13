@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.ptapp.activity.AgreeTosActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+     is needed to present your content, e.g. VideoView, SurfaceView,
+     TextureView, etc. -->
+    <LinearLayout
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/schoolo_image"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:contentDescription=""
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text1"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/theme_primary"
+            android:textSize="@dimen/text_size_medium"
+            android:paddingTop="0dp" />
+
+        <TextView
+            android:id="@+id/tos_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tosLink"
+            android:textSize="@dimen/text_size_large"
+            android:onClick="onClickTosLink"
+            android:clickable="true"
+            android:textColor="@color/theme_accent_1"
+            android:layout_marginTop="100dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/YellowGreen"
+            android:layout_marginBottom="20dp"></View>
+
+        <LinearLayout
+            android:layout_height="48dp"
+            android:background="@color/theme_primary"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="300dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?photoItemForeground"
+                android:text="@string/agree_continue"
+                android:textColor="#8fff"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="@integer/font_textStyle_medium"
+                android:fontFamily="@string/font_fontFamily_medium"
+                android:textAllCaps="true"
+                android:id="@+id/button_agree"
+                android:onClick="onClickAgreeAndContinue"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

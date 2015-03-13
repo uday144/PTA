@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Root styles that vary by API level -->
+    <!-- Disable RTL support on older devices -->
+    <!-- Prevents crash on certain devices to namespace conflict -->
+    <style name="FrameworkRoot.Theme" parent="android:Theme.Holo.Light.DarkActionBar" />
+
+    <style name="FrameworkRoot.ActionBar" parent="android:Widget.Holo.ActionBar" />
+
+    <style name="FrameworkRoot.ActionBar.TitleText" parent="android:TextAppearance.Holo.Widget.ActionBar.Title" />
+
+    <style name="FrameworkRoot.ActionBar.TabBar" parent="android:Widget.Holo.ActionBar.TabBar" />
+
+    <style name="FrameworkRoot.EditText" parent="android:Widget.Holo.Light.EditText" />
+
+    <style name="FrameworkRoot.Widget" parent="android:Theme.Holo" />
+
+    <style name="FrameworkRoot.Widget.ActionButton.Overflow" parent="android:Widget.Holo.ActionButton.Overflow" />
+
+    <style name="FrameworkRoot.Widget.Spinner" parent="android:Widget.Holo.Light.Spinner" />
+
+    <style name="FrameworkRoot.Widget.PopupMenu" parent="android:Widget.Holo.Light.PopupMenu" />
+
+    <style name="FrameworkRoot.Widget.ListView.DropDown" parent="android:Widget.Holo.Light.ListView.DropDown" />
+
+    <style name="FrameworkRoot.TextAppearance.Widget.PopupMenu.Large" parent="android:TextAppearance.Holo.Widget.PopupMenu.Large" />
+
+    <!-- Immediate parent theme to specify base values for custom attributes -->
+    <style name="Theme" parent="FrameworkRoot.Theme">
+
+        <!-- Only needed for pre-L -->
+        <item name="android:actionOverflowButtonStyle">@style/ActionButton.Overflow</item>
+        <item name="android:editTextBackground">@drawable/edit_text</item>
+        <item name="android:editTextStyle">@style/Widget.Schoolo.EditText</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.Schoolo.Widget</item>
+        <item name="android:actionDropDownStyle">@style/Widget.Schoolo.HeaderBar.Spinner</item>
+    </style>
+
+    <style name="ActionButton.Overflow" parent="FrameworkRoot.Widget.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_overflow</item>
+    </style>
+
+    <style name="Widget.Schoolo.EditText" parent="FrameworkRoot.EditText">
+        <item name="android:background">@drawable/edit_text</item>
+    </style>
+
+    <style name="Theme.Schoolo.Widget" parent="FrameworkRoot.Widget">
+        <item name="android:popupMenuStyle">@style/Widget.Schoolo.PopupMenu</item>
+        <item name="android:listPopupWindowStyle">@style/Widget.Schoolo.PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.Schoolo.ListView.DropDown</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/TextAppearance.LargePopupMenu
+        </item>
+    </style>
+
+    <style name="Widget.Schoolo.PopupMenu" parent="FrameworkRoot.Widget.PopupMenu">
+        <item name="android:dropDownSelector">?popupItemBackground</item>
+    </style>
+
+    <style name="Widget.Schoolo.ListView.DropDown" parent="FrameworkRoot.Widget.ListView.DropDown">
+        <item name="android:listSelector">?popupItemBackground</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="TextAppearance.LargePopupMenu" parent="FrameworkRoot.TextAppearance.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/body_text_1</item>
+    </style>
+
+    <!-- Spinner -->
+    <style name="Widget.Schoolo.HeaderBar.Spinner" parent="Widget.Schoolo.HeaderBar.Spinner.Base" />
+
+    <style name="Widget.Schoolo.HeaderBar.Spinner.Base" parent="FrameworkRoot.Widget.Spinner">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:dropDownSelector">?android:selectableItemBackground</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="Theme.Schoolo.Base" parent="Theme">
+        <item name="actionBarOverlayTopOffset">?android:actionBarSize</item>
+        <item name="actionBarInsetStart">?android:actionBarSize</item>
+        <item name="spinnerBarInsetStart">?android:actionBarSize</item>
+        <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
+        <item name="popupItemBackground">?android:selectableItemBackground</item>
+        <item name="photoItemForeground">?android:selectableItemBackground</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_up</item>
+        <item name="android:popupMenuStyle">@style/Widget.Schoolo.PopupMenu</item>
+        <item name="android:listPopupWindowStyle">@style/Widget.Schoolo.PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.Schoolo.ListView.DropDown</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/TextAppearance.LargePopupMenu
+        </item>
+    </style>
+
+    <style name="Theme.Schoolo" parent="Theme.Schoolo.Base" />
+
+    <style name="Theme.Schoolo.Search" parent="Theme.Schoolo">
+        <item name="android:windowBackground">@color/gray_background</item>
+    </style>
+
+    <style name="Theme.Schoolo.Conversation" parent="Theme.Schoolo.Base">
+        <!--gives error on removal-->
+        <item name="TextSizeInfo">12sp</item>
+        <!--gives error on removal-->
+        <item name="TextSizeBody">14sp</item>
+        <item name="TextSizeHeadline">20sp</item>
+    </style>
+    <style name="Theme.Schoolo.Conversation.LargerText" parent="Theme.Schoolo.Conversation">
+        <item name="TextSizeInfo">14sp</item>
+        <item name="TextSizeBody">16sp</item>
+        <item name="TextSizeHeadline">22sp</item>
+    </style>
+
+
+    <style name="Theme.Schoolo.Fullscreen" parent="Theme.Schoolo">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.Schoolo.Default" parent="Theme.Schoolo">
+        <!--<item name="android:actionBarSize">@dimen/actionbar_size</item>-->
+        <item name="android:windowTitleSize">@dimen/text_size_xlarge</item>
+        <item name="android:actionBarStyle">@style/ActionBar.OTP</item>
+    </style>
+
+    <!-- Action bar -->
+    <style name="ActionBar.Base" parent="FrameworkRoot.ActionBar">
+        <item name="android:background">@drawable/actionbar_background</item>
+        <!--SCH-->
+        <!--<item name="android:icon">@drawable/actionbar_icon</item>-->
+        <item name="android:icon">@drawable/schoolo</item>
+        <item name="android:displayOptions">showHome|showTitle</item>
+        <item name="android:titleTextStyle">@style/ActionBar.TitleText</item>
+        <item name="android:logo">@drawable/actionbar_logo</item>
+    </style>
+
+    <style name="ActionBar" parent="ActionBar.Base" />
+
+
+    <style name="ActionBar.TitleText" parent="FrameworkRoot.ActionBar.TitleText">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ActionBar.OTP" parent="ActionBar">
+        <item name="android:background">@drawable/actionbar_background</item>
+        <item name="android:icon">@drawable/ic_drawer</item>
+        <item name="android:titleTextStyle">@style/ActionBar.TitleText</item>
+    </style>
+
+    <!-- Explore item text appearances -->
+    <style name="ExploreItem.Title" parent="">
+        <item name="android:textColor">#fff</item>
+        <!-- a bit brighter than body_text_1_inverse to stand out more -->
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ExploreItem.Title.Hero">
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+        <item name="android:maxLines">3</item>
+    </style>
+
+    <style name="ExploreItem.Subtitle" parent="">
+        <item name="android:textColor">@color/body_text_2_inverse</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ExploreItem.Subtitle.Hero" />
+
+    <style name="ExploreItem.Snippet" parent="">
+        <item name="android:textColor">@color/body_text_2_inverse</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ExploreItem.Category" parent="">
+        <item name="android:textColor">@color/body_text_2_inverse</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <!--
+        <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="photoItemForeground">?android:selectableItemBackground</item>
+        <item name="popupItemBackground">?android:selectableItemBackground</item>
+    </style>
+    -->
+
+    <style name="DialogTheme" parent="android:Theme.Dialog" />
+
+    <!-- Home screen styles -->
+    <style name="bxKidPic">
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="bxMsg">
+        <item name="android:background">#c4c4c4</item>
+    </style>
+
+    <style name="bxEvents">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@drawable/rounded_box</item>
+    </style>
+
+    <style name="bxGallery">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:background">#cccccc</item>
+    </style>
+
+    <style name="bxSubjects">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:background">#000000</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+</resources>

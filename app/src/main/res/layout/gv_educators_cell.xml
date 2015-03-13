@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_gvEducator_cell"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000000" >
+
+    <FrameLayout
+        android:id="@+id/fl_gvEducator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <!-- SquaredImageView is added dynamically -->
+
+        <TextView
+            android:id="@+id/tv_Course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="#80c8c8c8" >
+        </TextView>
+    </FrameLayout>
+
+</RelativeLayout>

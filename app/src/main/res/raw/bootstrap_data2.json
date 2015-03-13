@@ -1,0 +1,134 @@
+{
+"educators":[
+                {"email":"e9@e.com","fName":"Edu9","gender":"Male","id":"9","imagePath":"http://saldef.org/wp-content/uploads/2010/01/Romi-282x300.jpg","lName":"Singh","phone":"23111-3433","type":"Educator"},
+                {"email":"birender.singhz@gmail.com","fName":"Prof.Jaskirat ","gender":"Female","id":"10","imagePath":"http://www.indiaeducation.net/imagesvr_ce/6228/teacher.jpg","lName":"Kaur","phone":"23111-3433","type":"Educator"},
+                {"email":"jassi.scorpion@gmail.com","fName":"Edu11","gender":"Male","id":"11","imagePath":"https://www.montana.edu/cpa/news/images/articles/20121214-856550290169856545.jpg","lName":"Singh","phone":"23111-3433","type":"Educator"},
+                {"email":"e12@e.com","fName":"Edu12","gender":"Female","id":"12","imagePath":"http://4.bp.blogspot.com/-JOtVA2H2oSA/UShjYdbhDBI/AAAAAAAAADs/0Pvn24e5dHg/s1600/kulwinder+kaur+punjabi+misstess.jpg","lName":"Kaur","phone":"23111-3433","type":"Educator"},
+                {"email":"e13@e.com","fName":"Edu13","gender":"Male","id":"13","imagePath":"http://3.bp.blogspot.com/-8fQwrWZlgo4/UShjcZ67b_I/AAAAAAAAAFI/opKIFrggD0E/s1600/s.sukhwinder+singh+s.s.+master.jpg","lName":"Singh","phone":"23111-3433","type":"Educator"},
+                {"email":"e14@e.com","fName":"Edu14","gender":"Female","id":"14","imagePath":"http://www.indiaafricaconnect.in/upload/Multimedia/201003281641031_l.jpg","lName":"Kaur","phone":"23111-3433","type":"Educator"},
+                {"email":"e15@e.com","fName":"Edu15","gender":"Male","id":"15","imagePath":"http://1.bp.blogspot.com/-QIOALoAw0ZE/UShjaaNFtbI/AAAAAAAAAEk/xf3gIPTinZU/s1600/s.gurpreet+singh+s.s.+master.jpg","lName":"Singh","phone":"23111-3433","type":"Educator"},
+                {"email":"e16@e.com","fName":"Edu16","gender":"Female","id":"16","imagePath":"http://4.bp.blogspot.com/-r2sFHGGU5y4/UdaYC_SB1KI/AAAAAAAACXc/UF_X6XhLldM/s320/shanti.jpg","lName":"Kaur","phone":"23111-3433","type":"Educator"}
+            ],
+"courses":[
+                {"courseName":"English2","educatorId":"10","studentId":"1","grade":"","id":"9","unit1Score":0,"unit2Score":0,"unit3Score":0,"year":2014},
+                {"courseName":"Math2","educatorId":"10","studentId":"2","grade":"","id":"10","unit1Score":0,"unit2Score":0,"unit3Score":0,"year":2014},
+                {"courseName":"Punjabi2","educatorId":"11","studentId":"3","grade":"","id":"11","unit1Score":0,"unit2Score":0,"unit3Score":0,"year":2014},
+                {"courseName":"Hindi2","educatorId":"11","studentId":"4","grade":"","id":"12","unit1Score":0,"unit2Score":0,"unit3Score":0,"year":2014},
+                {"courseName":"French2","educatorId":"11","studentId":"5","grade":"","id":"13","unit1Score":0,"unit2Score":0,"unit3Score":0,"year":2014},
+                {"courseName":"German2","educatorId":"11","studentId":"6","grade":"","id":"14","unit1Score":0,"unit2Score":0,"unit3Score":0,"year":2014},
+                {"courseName":"Science2","educatorId":"10","studentId":"7","grade":"","id":"15","unit1Score":0,"unit2Score":0,"unit3Score":0,"year":2014},
+                {"courseName":"Dutch2","educatorId":"10","studentId":"8","grade":"","id":"16","unit1Score":0,"unit2Score":0,"unit3Score":0,"year":2014}
+          ],
+"students":[
+                {"fName":"Diljit","gender":"Male","id":"1","lName":"Singh","rollNumber":"23","imgPath":"http://sphotos-b.ak.fbcdn.net/hphotos-ak-xfa1/t1.0-9/574748_10151053922673940_686321950_n.jpg"},
+                {"fName":"Anupreet","gender":"Female","id":"2","lName":"Kaur","rollNumber":"24","imgPath":"http://www.singhstylestudio.com/kids-model-portfolio/parul-01/parul-01-02.jpg"},
+                {"fName":"Sher","gender":"Male","id":"3","lName":"Singh","rollNumber":"25","imgPath":"http://www.singhstylestudio.com/kids-model-portfolio/jaspreet-01/jaspreet-01-01.jpg"},
+                {"fName":"Dara","gender":"Male","id":"4","lName":"Singh","rollNumber":"26","imgPath":"http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sikh_Boy_wearing_Patka.jpg/220px-Sikh_Boy_wearing_Patka.jpg"},
+                {"fName":"Surveen","gender":"Female","id":"5","lName":"Kaur","rollNumber":"27","imgPath":"http://i29.tinypic.com/mttl3k.jpg"},
+                {"fName":"Karam","gender":"Male","id":"6","lName":"Singh","rollNumber":"28","imgPath":"http://www.unitedsikhs.org/PressReleases/PRSRLS-16-03-2005-00-00.jpg"},
+                {"fName":"Ajit","gender":"Male","id":"7","lName":"Singh","rollNumber":"29","imgPath":"http://i28.tinypic.com/30j2ww5.jpg"},
+                {"fName":"Sahib","gender":"Female","id":"8","lName":"kaur","rollNumber":"30","imgPath":"http://i31.tinypic.com/okzmz4.jpg"},
+                {"fName":"Prableen","gender":"Female","id":"9","lName":"Kaur","rollNumber":"31","imgPath":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPedqrY_2lyGeJPutn1uYi-N_5xLKSJaXAunJunz1QbyAMoxAczbTJPujs"},
+                {"fName":"Jaspreet","gender":"Female","id":"10","lName":"Kaur","rollNumber":"32","imgPath":""},
+                {"fName":"Gurdayal","gender":"Male","id":"11","lName":"Singh","rollNumber":"33","imgPath":""},
+                {"fName":"Simran","gender":"Female","id":"12","lName":"kaur","rollNumber":"34","imgPath":""},
+                {"fName":"Harjot","gender":"Male","id":"13","lName":"Singh","rollNumber":"35","imgPath":""},
+                {"fName":"Gurjot","gender":"Male","id":"14","lName":"Singh","rollNumber":"36","imgPath":""},
+                {"fName":"Harpreet","gender":"Female","id":"15","lName":"Kaur","rollNumber":"37","imgPath":""},
+                {"fName":"Simranpal","gender":"Male","id":"16","lName":"Singh","rollNumber":"38","imgPath":""},
+                {"fName":"Gurpal","gender":"Male","id":"17","lName":"Singh","rollNumber":"39","imgPath":""},
+                {"fName":"Avneep","gender":"Male","id":"18","lName":"Singh","rollNumber":"40","imgPath":""},
+                {"fName":"Harjot","gender":"Female","id":"19","lName":"Kaur","rollNumber":"41","imgPath":""},
+                {"fName":"Snatam","gender":"Female","id":"20","lName":"Kaur","rollNumber":"42","imgPath":""},
+                {"fName":"Birender","gender":"Male","id":"21","lName":"Singh","rollNumber":"43","imgPath":""},
+                {"fName":"Rubinder","gender":"Male","id":"22","lName":"Singh","rollNumber":"44","imgPath":""},
+                {"fName":"Nirinjan","gender":"Female","id":"23","lName":"Kaur","rollNumber":"45","imgPath":""},
+                {"fName":"Harpreet","gender":"Male","id":"24","lName":"Singh","rollNumber":"46","imgPath":""},
+                {"fName":"Baldeep","gender":"Female","id":"25","lName":"Kaur","rollNumber":"47","imgPath":""},
+                {"fName":"Jaspreet","gender":"Male","id":"26","lName":"Singh","rollNumber":"48","imgPath":""}
+          ],
+  "events": [
+                  {"evtType":"SPRT","id":"50a8fac3-1f1e-c849-ab9e-d6724c84b025","forClasses":"all",
+                      "eventTitle":"Shout Out Louds at La Machine du Moulin Rouge",
+                      "eventDescription":"Shout Out Louds\n\nhttp://www.last.fm/event/1748422+Shout+Out+Louds+at+La+Machine+du+Moulin+Rouge+on+28+March+2011",
+                      "endDatetime":"2015-01-22 09:45:00","startDatetime": "2015-01-22 08:45:00"
+                  },
+                  {"evtType": "SPRT","id": "9e083681-aea3-7848-8a55-a1637c04f6b4","forClasses": "3rd, 4th",
+                      "eventTitle": "Shout Out Louds + Hello Bye Bye at La Nef",
+                      "eventDescription": "Shout Out Louds, Hello Bye Bye\n\nhttp://www.last.fm/event/1755031+Shout+Out+Louds+at+La+Nef+on+29+March+2011",
+                      "endDatetime": "2015-01-22 15:00:00","startDatetime": "2015-01-22 14:00:00"
+                  },
+                  {"evtType": "SPRT","id": "1","forClasses": "3rd, 5th",
+                      "eventTitle": "Testing new event",
+                      "eventDescription": "What's the capital of hungry?",
+  		    "endDatetime": "2015-01-22 12:00:00","startDatetime": "2015-01-22 14:00:00"
+                  },
+                  {"evtType": "PTM","id": "2","forClasses": "3rd, 4th, 7th, 8th",
+                      "eventTitle": "Regular PT meeting of month August",
+                      "eventDescription": "During the first period, in the respective classes",
+                      "endDatetime": "2015-01-20 08:00:00","startDatetime": "2015-01-20 10:00:00"
+                  },
+                  {"evtType": "PTM","id": "3","forClasses": "1st, 2nd",
+                      "eventTitle": "School's Regular PT meeting of month May",
+                      "eventDescription": "During the first period, in the respective classes",
+                      "endDatetime": "2015-01-12 08:00:00","startDatetime": "2015-01-12 10:00:00"
+                  },
+                  {"evtType": "SPRT","id": "4","forClasses": "1st, 2nd,3rd",
+                      "eventTitle": "Children games event",
+                      "eventDescription": "many games will be played.",
+                      "endDatetime": "2015-01-12 08:30:00","startDatetime": "2015-01-12 12:30:00"
+                  },
+                  {"evtType": "SPRT","id": "5","forClasses": "1st, 2nd,3rd, 4th",
+                      "eventTitle": "2nd Children games event",
+                      "eventDescription": "many games will be played.",
+                      "endDatetime": "2015-01-15 08:30:00","startDatetime": "2015-01-15 12:30:00"
+                  }
+      	],
+"events": [
+                {"evtType":"SPRT","id":"50a8fac3-1f1e-c849-ab9e-d6724c84b025","forClasses":"all",
+                    "eventTitle":"Shout Out Louds at La Machine du Moulin Rouge",
+                    "eventDescription":"Shout Out Louds\n\nhttp://www.last.fm/event/1748422+Shout+Out+Louds+at+La+Machine+du+Moulin+Rouge+on+28+March+2011",
+                    "endDatetime":"2015-01-22 09:45:00","startDatetime": "2015-01-22 08:45:00"
+                },
+                {"evtType": "SPRT","id": "9e083681-aea3-7848-8a55-a1637c04f6b4","forClasses": "3rd, 4th",
+                    "eventTitle": "Shout Out Louds + Hello Bye Bye at La Nef",
+                    "eventDescription": "Shout Out Louds, Hello Bye Bye\n\nhttp://www.last.fm/event/1755031+Shout+Out+Louds+at+La+Nef+on+29+March+2011",
+                    "endDatetime": "2015-01-22 15:00:00","startDatetime": "2015-01-22 14:00:00"
+                },
+                {"evtType": "SPRT","id": "1","forClasses": "3rd, 5th",
+                    "eventTitle": "Testing new event",
+                    "eventDescription": "What's the capital of hungry?",
+		            "endDatetime": "2015-01-22 12:00:00","startDatetime": "2015-01-22 14:00:00"
+                },
+                {"evtType": "PTM","id": "2","forClasses": "3rd, 4th, 7th, 8th",
+                    "eventTitle": "Regular PT meeting of month August",
+                    "eventDescription": "During the first period, in the respective classes",
+                    "endDatetime": "2015-01-20 08:00:00","startDatetime": "2015-01-20 10:00:00"
+                },
+                {"evtType": "PTM","id": "3","forClasses": "1st, 2nd",
+                    "eventTitle": "School's Regular PT meeting of month May",
+                    "eventDescription": "During the first period, in the respective classes",
+                    "endDatetime": "2015-01-12 08:00:00","startDatetime": "2015-01-12 10:00:00"
+                },
+                {"evtType": "SPRT","id": "4","forClasses": "1st, 2nd,3rd",
+                    "eventTitle": "Children games event",
+                    "eventDescription": "many games will be played.",
+                    "endDatetime": "2015-01-12 08:30:00","startDatetime": "2015-01-12 12:30:00"
+                },
+                {"evtType": "SPRT","id": "5","forClasses": "1st, 2nd,3rd, 4th",
+                    "eventTitle": "2nd Children games event",
+                    "eventDescription": "many games will be played.",
+                    "endDatetime": "2015-01-15 08:30:00","startDatetime": "2015-01-15 12:30:00"
+                },
+                {"evtType": "SPRT","id": "6","forClasses": "1st, 2nd,3rd, 4th",
+                    "eventTitle": "Feb event 1",
+                    "eventDescription": "many games will be played.",
+                    "endDatetime": "2015-02-15 08:30:00","startDatetime": "2015-02-15 12:30:00"
+                },
+                {"evtType": "SPRT","id": "7","forClasses": "1st, 2nd,3rd",
+                    "eventTitle": "Feb event number 2",
+                    "eventDescription": "many games will be played.",
+                    "endDatetime": "2015-02-12 08:30:00","startDatetime": "2015-02-12 12:30:00"
+                }
+    	]
+}

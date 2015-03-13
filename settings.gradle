@@ -1,0 +1,3 @@
+include ':app'
+include ':app:libs:openpgp-api-lib'
+include ':app:libs:MemorizingTrustManager'

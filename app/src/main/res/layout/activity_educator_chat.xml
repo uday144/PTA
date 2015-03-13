@@ -1,0 +1,301 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main layout -->
+    <com.ptapp.widget.DrawShadowFrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        app:shadowDrawable="@drawable/header_shadow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray">
+
+            <!-- Clickable title -->
+            <LinearLayout
+                android:id="@+id/collapse_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:onClick="onClickToggleDemographics"
+                android:layout_alignParentTop="true">
+                <!-- Educator Name -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".90"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Name: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_name_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_upDown"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight=".10"
+                    android:layout_gravity="right" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_demographics"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/collapse_header">
+
+
+                <!-- Educator Email -->
+
+                <LinearLayout
+                    android:id="@+id/ll_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_email_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <!-- Educator Phone -->
+
+                <LinearLayout
+                    android:id="@+id/ll_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_phone_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <!-- Educator Type -->
+
+                <LinearLayout
+                    android:id="@+id/ll_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_type_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dummy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_phone_dummy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_phone_value_dummy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dummy3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_phone_dummy3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone3: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_phone_value_dummy3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dummy4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_phone_dummy4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone4: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_phone_value_dummy4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dummy5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_phone_dummy5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone5: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_phone_value_dummy5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dummy6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_phone_dummy6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone6: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_phone_value_dummy6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dummy7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_phone_dummy7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone7: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_phone_value_dummy7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dummy8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_phone_dummy8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone8: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txt_phone_value_dummy8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:layout_below="@+id/ll_demographics"
+                android:layout_above="@+id/rl_typeSend">
+
+
+                <ListView
+                    android:id="@+id/listChat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@color/OrangeRed" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_typeSend"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/msg_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".90"></EditText>
+
+                    <Button
+                        android:id="@+id/send_btn"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".20"
+                        android:text="Send"
+                        android:onClick="onClickSend" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </com.ptapp.widget.DrawShadowFrameLayout>
+
+    <!-- Nav drawer -->
+    <include layout="@layout/navdrawer_for_ab_overlay" />
+
+</android.support.v4.widget.DrawerLayout>

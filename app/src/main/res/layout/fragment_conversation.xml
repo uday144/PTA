@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondarybackground">
+
+    <LinearLayout
+        android:id="@+id/name_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="4dp"
+        android:background="@color/navdrawer_background"
+        android:visibility="visible">
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/refresh_progress_1"
+            android:textStyle="bold"
+            android:textSize="@dimen/list_item_msg_text_size"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/messages_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_bar"
+        android:layout_above="@+id/snackbar"
+        android:layout_alignParentLeft="true"
+        android:background="@color/secondarybackground"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:stackFromBottom="true"
+        android:transcriptMode="normal"
+        tools:listitem="@layout/message_sent"></ListView>
+
+    <!--Not needed yet-->
+    <RelativeLayout
+        android:id="@+id/send_to_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/textsend"
+        android:minHeight="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/send_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_to"
+            android:textSize="@dimen/list_item_msg_text_size"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="20dp" />
+
+        <LinearLayout
+            android:id="@+id/view_flag_s"
+            android:layout_height="30dp"
+            android:background="@color/theme_accent_3"
+            android:layout_gravity="bottom|center"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_toRightOf="@+id/send_to"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/flag_s"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?photoItemForeground"
+                android:text="S"
+                android:textColor="@color/navdrawer_background"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="@integer/font_textStyle_medium"
+                android:fontFamily="@string/font_fontFamily_medium"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_flag_f"
+            android:layout_height="30dp"
+            android:background="@color/refresh_progress_1"
+            android:layout_gravity="bottom|center"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_toRightOf="@+id/view_flag_s">
+
+            <Button
+                android:id="@+id/flag_f"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?photoItemForeground"
+                android:text="F"
+                android:textColor="@color/navdrawer_background"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="@integer/font_textStyle_medium"
+                android:fontFamily="@string/font_fontFamily_medium"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_flag_m"
+            android:layout_height="30dp"
+            android:background="@color/theme_primary"
+            android:layout_gravity="bottom|center"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_toRightOf="@+id/view_flag_f">
+
+            <Button
+                android:id="@+id/flag_m"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?photoItemForeground"
+                android:text="M"
+                android:textColor="@color/navdrawer_background"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="@integer/font_textStyle_medium"
+                android:fontFamily="@string/font_fontFamily_medium"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/textsend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/primarybackground">
+
+        <com.ptapp.activity.EditMessage
+            android:id="@+id/textinput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/textSendButton"
+            android:background="@color/primarybackground"
+            android:ems="10"
+            android:imeOptions="flagNoExtractUi|actionSend"
+            android:inputType="textShortMessage|textMultiLine|textCapSentences"
+            android:minHeight="48dp"
+            android:minLines="1"
+            android:paddingBottom="12dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="12dp"
+            android:textColor="@color/primarytext">
+
+            <requestFocus />
+        </com.ptapp.activity.EditMessage>
+
+        <ImageButton
+            android:id="@+id/textSendButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/ic_action_send_now_offline" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/snackbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send_to_bar"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/snackbar"
+        android:minHeight="48dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/snackbar_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/snackbar_action"
+            android:paddingLeft="24dp"
+            android:textColor="@color/ondarktext"
+            android:textSize="?attr/TextSizeBody" />
+
+        <TextView
+            android:id="@+id/snackbar_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="16dp"
+            android:textAllCaps="true"
+            android:textColor="@color/ondarktext"
+            android:textSize="?attr/TextSizeBody"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

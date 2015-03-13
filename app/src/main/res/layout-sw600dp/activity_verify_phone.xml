@@ -1,0 +1,140 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.ptapp.activity.VerifyPhoneActivity">
+
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+             is needed to present your content, e.g. VideoView, SurfaceView,
+             TextureView, etc. -->
+    <LinearLayout
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="200dp"
+            android:src="@drawable/schoolo_image"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:contentDescription=""
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="460dp"
+            android:layout_height="wrap_content"
+            android:text="@string/verify_phone"
+            android:gravity="center_horizontal"
+            android:textColor="@color/theme_primary"
+            android:textSize="@dimen/text_size_xlarge"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_phone"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textColor="@color/body_text_3"
+            android:paddingTop="30dp" />
+
+        <TextView
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:text="@string/app_will_send"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textColor="@color/body_text_3"
+            android:paddingTop="30dp" />
+
+        <Spinner
+            android:id="@+id/spin_country"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"></Spinner>
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/plus_sign"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/country_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/isd_code"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/hint_phone_number"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:layout_height="44dp"
+                android:background="@color/theme_primary"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_weight=".4">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/btn_ok_text"
+                    android:background="?photoItemForeground"
+                    android:textColor="#8fff"
+                    android:textStyle="@integer/font_textStyle_medium"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:textAllCaps="true"
+                    android:fontFamily="@string/font_fontFamily_medium"
+                    android:onClick="onClickOK" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/error_message"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/YellowGreen"
+            android:layout_marginBottom="150dp"></View>
+
+    </LinearLayout>
+
+</FrameLayout>

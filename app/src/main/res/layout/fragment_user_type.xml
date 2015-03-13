@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ptapp.activity.UserTypeActivity$PlaceholderFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#e5e5e5">
+
+        <ImageView
+            android:src="@drawable/io2014_logo"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center|top" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:background="@drawable/card_bg"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/body_text_2"
+                    android:textSize="14sp"
+                    android:text="@string/user_type_text" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+
+    <!--Button bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="bottom"
+        android:background="@color/theme_primary">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?photoItemForeground"
+            android:textColor="#8fff"
+            android:textSize="@dimen/text_size_medium"
+            android:text="As a Parent"
+            android:fontFamily="@string/font_fontFamily_medium"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:id="@+id/btn_Parent" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#8fff"
+            android:textSize="@dimen/text_size_medium"
+            android:background="?photoItemForeground"
+            android:text="As a Educator"
+            android:fontFamily="@string/font_fontFamily_medium"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:id="@+id/btn_Educator" />
+    </LinearLayout>
+</LinearLayout>
+
+
+

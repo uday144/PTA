@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <gradient
+        android:startColor="#FFFF0000"
+        android:endColor="#80FF00FF"
+        android:angle="270" />
+    <!--<solid android:color="@color/navdrawer_background" />-->
+    <!--<corners android:radius="10dp" />
+    <size
+        android:width="20dp"
+        android:height="20dp" />-->
+    <!--<padding
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp" />-->
+</shape>

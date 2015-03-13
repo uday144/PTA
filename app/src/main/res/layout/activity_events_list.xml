@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Left right arrows -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/ib_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:onClick="onClickPreviousMonth"
+            android:src="@drawable/arrowleft" />
+
+        <ImageButton
+            android:id="@+id/ib_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="onClickNextMonth"
+            android:src="@drawable/arrowright" />
+    </RelativeLayout>
+
+    <!-- Text, month name -->
+
+    <TextView
+        android:id="@+id/tv_whichMonth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- List of events -->
+
+    <ListView
+        android:id="@+id/listV_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Text, when no events -->
+
+    <TextView
+        android:id="@+id/tv_no_events"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+
+</LinearLayout>

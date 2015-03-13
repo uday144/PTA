@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_person"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/student"
+        android:layout_gravity="center"
+        android:contentDescription=""
+        android:scaleType="fitCenter" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/admission_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/body_text_2"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/body_text_2"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/tv_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:textColor="@color/body_text_2"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/tv_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="School Name"
+            android:textColor="@color/body_text_2"
+            android:textSize="@dimen/text_size_medium" />
+
+    </LinearLayout>
+
+</LinearLayout>

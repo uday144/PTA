@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.ptapp.app"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+    }
+}
+
+repositories {
+    maven {
+        url "http://jitsi.github.com/otr4j/repository/"
+    }
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/commons-io-2.4.jar')
+    compile files('libs/glide-3.2.0a.jar')
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    /*using with retrofit - use both okhttp and okhttp-urlconnection to work with picasso*/
+    compile 'com.squareup.okhttp:okhttp:2.2.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
+    //compile project(path: ':backend', configuration: 'android-endpoints')
+    /*compile 'com.google.android.gms:play-services:5.2.08'*/
+    compile 'com.google.android.gms:play-services:6.1.11'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:support-v4:21.0.0'
+    compile 'com.android.support:support-v13:21.0.0'
+    /*conversations files*/
+    compile 'net.java:otr4j:0.22'
+    compile 'org.gnu.inet:libidn:1.15'
+    compile 'de.measite.minidns:minidns:0.1.3'
+    compile 'org.bouncycastle:bcprov-jdk15on:1.50'
+    /*- crypto*/
+    compile project('libs:openpgp-api-lib')
+    compile project('libs:MemorizingTrustManager')
+    /*compile 'com.google.zxing:core:3.1.0'
+            compile 'com.google.zxing:android-integration:3.1.0'*/
+}
